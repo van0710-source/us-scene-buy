@@ -1,7 +1,7 @@
 /* Kitchen drain quiz — shared by site/quiz.html */
 (function () {
-  // Set after Amazon Associates approval, e.g. "yourtag-20". Leave "" for untagged links.
-  const AFFILIATE_TAG = "";
+  // Amazon Associates store ID / tag
+  const AFFILIATE_TAG = "usscenebuy-20";
 
   const ASIN = {
     S1: "B08FGH2V5Q",
@@ -450,7 +450,7 @@
       <p class="step-label">Your next step</p>
       <h2>Here’s the honest call</h2>
       <div class="banner disclosure">
-        <strong>Disclosure:</strong> We may earn a commission if you buy through links on this site (Amazon Associates). This page currently uses untagged Amazon links until the account is live. Prices and stock change — trust the checkout page. Info as-of 2026-07-17.
+        <strong>Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases. Prices and stock change — trust the checkout page. Info as-of 2026-07-17.
       </div>
       <div class="banner safety">
         <strong>Safety:</strong> Never mix drain chemicals. Follow the product label every time.

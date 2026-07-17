@@ -12,8 +12,8 @@
 |------|------|------|
 | Phase0～1 | 完成 | 规格 + 问卷 + 内部合成验收 |
 | 小站内容 | 完成 | 首页/问卷/6 篇指南；无 tag |
-| **公开 HTTPS** | **卡在 GitHub 登录** | 本环境无 `gh` 登录态，无法代创仓库/推送；你执行一次 `gh auth login` 后跑 deploy 脚本即可全自动 |
-| Phase2 Associates | 待公开 URL | 须你本人在 Amazon 账号内申请（无法代填税务/身份） |
+| **公开 HTTPS** | **已上线** | https://van0710-source.github.io/us-scene-buy/ |
+| Phase2 Associates | **当前优先** | 用该 URL 在 Amazon 申请；W-8BEN + 派安盈 Direct deposit |
 | Phase3 | 获批后 | 我可把 `AFFILIATE_TAG` 写入 `quiz.js` |
 
 ## 你只需做的最少手动项（无法代理）
