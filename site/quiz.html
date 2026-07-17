@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get one kitchen drain pick — US Scene Buy</title>
+  <meta name="description" content="Five quick questions. One primary next step for your kitchen sink clog or odor — including permission not to buy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="logo" href="index.html">US Scene Buy</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="quiz.html" aria-current="page">Get a pick</a>
+        <a href="guides/slow-kitchen-drain-grease.html">Guides</a>
+        <a href="guides/prevent-grease-clog.html">Prevent</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="eyebrow">Kitchen sink SOS</p>
+    <h1 style="font-family:Literata,Georgia,serif;font-size:clamp(1.8rem,4vw,2.4rem);line-height:1.15;color:var(--deep);margin:0 0 0.65rem;">
+      That drain doesn’t need another random bottle.
+    </h1>
+    <p class="muted" style="margin:0 0 1.25rem;max-width:36em;">
+      Tell me what’s going on at <strong style="color:var(--ink)">your</strong> sink. I’ll narrow it to one sensible next step — or tell you to wait / call a pro.
+    </p>
+
+    <form id="quiz" class="panel" aria-label="Kitchen drain questions">
+      <p class="step-label">Five quick checks</p>
+      <h2>Let’s match a fix to your situation</h2>
+      <p class="panel-sub">These keep you from using the wrong chemistry on the wrong pipes.</p>
+
+      <fieldset>
+        <legend>1. What’s happening at the sink right now?</legend>
+        <span class="q-help">How it feels today decides gentle vs mechanical vs call-for-help.</span>
+        <label class="opt"><input type="radio" name="q1" value="full_clog" required /><span><b>Barely draining — basically stuck</b><small>Standing water or a trickle at best</small></span></label>
+        <label class="opt"><input type="radio" name="q1" value="slow_drain" /><span><b>Slow, especially after cooking</b><small>Classic grease / food film pattern</small></span></label>
+        <label class="opt"><input type="radio" name="q1" value="odor_only" /><span><b>Smells off, but water still goes down</b><small>Odor first — not a full blockage</small></span></label>
+        <label class="opt"><input type="radio" name="q1" value="odor_and_slow" /><span><b>Smell + slow drain</b><small>Both annoyances at once</small></span></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Where does this drain go?</legend>
+        <span class="q-help">Septic vs city sewer changes what’s safe to pour.</span>
+        <label class="opt"><input type="radio" name="q2" value="sewer" required /><span><b>City sewer</b><small>Municipal line</small></span></label>
+        <label class="opt"><input type="radio" name="q2" value="septic" /><span><b>Septic system</b><small>We’ll stay conservative on harsh openers</small></span></label>
+        <label class="opt"><input type="radio" name="q2" value="unsure" /><span><b>I’m not sure</b><small>We’ll treat it carefully</small></span></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. What do you think is in the line?</legend>
+        <span class="q-help">Kitchen clogs are usually grease &amp; scraps. Also tell me if there’s a disposal.</span>
+        <label class="opt"><input type="radio" name="q3" value="grease_disposal" required /><span><b>Grease / food — and I have a disposal</b></span></label>
+        <label class="opt"><input type="radio" name="q3" value="grease_no_disposal" /><span><b>Grease / food — no disposal</b></span></label>
+        <label class="opt"><input type="radio" name="q3" value="unsure_cause" /><span><b>Not sure what’s causing it</b></span></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Anything that should keep us cautious?</legend>
+        <span class="q-help">Pick all that apply.</span>
+        <label class="opt"><input type="checkbox" name="q4" value="rental_no_harsh" /><span><b>I rent</b><small>Rather not use harsh chemicals</small></span></label>
+        <label class="opt"><input type="checkbox" name="q4" value="old_pipes" /><span><b>Older home / older pipes</b></span></label>
+        <label class="opt"><input type="checkbox" name="q4" value="kids_pets" /><span><b>Kids or pets around</b></span></label>
+        <label class="opt"><input type="checkbox" name="q4" value="none" id="q4-none" /><span><b>None of these</b></span></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>5. What have you already tried?</legend>
+        <span class="q-help">If a chemical already went down, we will not recommend another to stack on top.</span>
+        <label class="opt"><input type="radio" name="q5" value="tried_none" required /><span><b>Nothing yet</b></span></label>
+        <label class="opt"><input type="radio" name="q5" value="tried_mechanical" /><span><b>Plunger, snake, or other physical tools</b></span></label>
+        <label class="opt"><input type="radio" name="q5" value="tried_chemical" /><span><b>Already used a chemical drain opener</b></span></label>
+        <label class="opt"><input type="radio" name="q5" value="tried_pro_contact" /><span><b>Plumber is coming (or already called)</b></span></label>
+      </fieldset>
+
+      <div class="actions">
+        <button type="submit" class="primary">Show my next step</button>
+        <button type="reset" class="ghost">Start over</button>
+      </div>
+
+      <details class="tester">
+        <summary>Tester tools (sample paths A–D)</summary>
+        <div class="demo-row">
+          <button type="button" class="chip" data-sample="A">A · septic + slow</button>
+          <button type="button" class="chip" data-sample="B">B · sewer full clog</button>
+          <button type="button" class="chip" data-sample="C">C · already used chemical</button>
+          <button type="button" class="chip" data-sample="D">D · odor + rental</button>
+        </div>
+      </details>
+    </form>
+
+    <section id="result" class="panel" hidden aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p><strong>Affiliate disclosure:</strong> We may earn commissions from qualifying Amazon purchases. Links may be untagged until Associates approval.</p>
+      <p><strong>Safety:</strong> Never mix drain chemicals. Follow product labels. Not a substitute for a licensed plumber.</p>
+      <p><a href="index.html">Home</a> · <a href="guides/prevent-grease-clog.html">Prevention</a></p>
+    </div>
+  </footer>
+  <script src="assets/quiz.js"></script>
+</body>
+</html>
