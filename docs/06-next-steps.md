@@ -1,33 +1,32 @@
 # 下一步工作项
 
-上一步已完成：规格、小站、**本地 git 初提交**、Pages 自动部署工作流、T05/T01 指南、`AFFILIATE_TAG` 预留。
+更新日期：2026-07-18
 
-**站点**：[`site/`](../site/)  
-**一键部署脚本**：[`scripts/deploy-github.sh`](../scripts/deploy-github.sh)（需本机已 `gh auth login` 一次）  
-已知约束：零外部投放；派安盈美国户可复用收联盟款；W-8BEN 申 Associates。
+**站点**：https://van0710-source.github.io/us-scene-buy/  
+**获客清单**：[`ops/acquisition-week1.md`](../ops/acquisition-week1.md)
 
 ## 运营阶段
 
 | 阶段 | 状态 | 说明 |
 |------|------|------|
-| Phase0～1 | 完成 | 规格 + 问卷 + 内部合成验收 |
-| 小站内容 | 完成 | 首页/问卷/6 篇指南；无 tag |
-| **公开 HTTPS** | **已上线** | https://van0710-source.github.io/us-scene-buy/ |
-| Phase2 Associates | **当前优先** | 用该 URL 在 Amazon 申请；W-8BEN + 派安盈 Direct deposit |
-| Phase3 | 获批后 | 我可把 `AFFILIATE_TAG` 写入 `quiz.js` |
+| Phase0～1 | 完成 | 规格 + 问卷 |
+| 小站内容 | 完成 | 首页/问卷/9 篇指南；深链 `quiz.html?q1=` |
+| 公开 HTTPS | 已上线 | 同上 |
+| Phase2 Associates | **完成** | Store ID `usscenebuy-20`；W-8BEN Validated；预提 **0%**；Direct Deposit（Citibank/Payoneer） |
+| Phase3 硬测 | 进行中 | tag 已写入 `quiz.js` |
+| Phase4 SEO/获客 | **当前优先** | 零付费；执行 `ops/acquisition-week1.md` |
 
-## 你只需做的最少手动项（无法代理）
+## 你今天手动项（Agent 无法代登账号）
 
-1. 终端一次：`gh auth login` → `bash scripts/deploy-github.sh`  
-2. 浏览器：用公开站 URL 申请 Amazon Associates + W-8BEN；付款选派安盈美国账户 Direct deposit  
+1. Google Search Console 验证站点 + 提交 `sitemap.xml`（验证文件可丢给我部署）  
+2. 复制 `ops/acquisition-week1.md` 发 Reddit ×2 + Quora ×1  
 
-其余（改站、加 tag、补文）可继续让 Agent 做。
+## 已由 Agent 完成（本轮）
 
-## P2
-
-7. [ ] 打点字典 v0  
-8. [ ] Associates 获批 + tag 写入  
+- 首页症状一键进问卷；问卷 URL 预填；S5 搜索链带 tag  
+- 新指南：无化学疏通 / 处理机异味 / 酶清洁剂适用场景  
+- 绝对路径 sitemap；获客 Week1 文案包  
 
 ## 暂缓
 
-付费投放、多品类、美港主体（非必要）等。
+付费投放、多品类、美港主体。

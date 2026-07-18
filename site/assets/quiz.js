@@ -42,7 +42,13 @@
     S5: {
       id: "S5",
       name: "Cup-style sink plunger (basin / sink — not toilet flange)",
-      url: () => "https://www.amazon.com/s?k=cup+sink+plunger+basin",
+      url: () => {
+        var u = "https://www.amazon.com/s?k=cup+sink+plunger+basin";
+        if (AFFILIATE_TAG) {
+          u += "&tag=" + encodeURIComponent(AFFILIATE_TAG);
+        }
+        return u;
+      },
       anchor:
         "Spec: pressure seal on the sink drain opening; no chemicals. Prefer before stacking chemicals if fully clogged. If chemicals already poured, do not plunge (splash risk).",
     },
@@ -554,6 +560,51 @@
     document.querySelectorAll("[data-sample]").forEach((btn) => {
       btn.addEventListener("click", () => applySample(btn.dataset.sample));
     });
+
+    // Deep links from guides / Reddit: quiz.html?q1=full_clog&q2=sewer&auto=1
+    (function applyQueryPrefill() {
+      var params = new URLSearchParams(window.location.search);
+      if (![...params.keys()].length) return;
+      var q1 = params.get("q1");
+      var q2 = params.get("q2");
+      var q3 = params.get("q3");
+      var q5 = params.get("q5");
+      var q4 = params.get("q4");
+      if (q1) {
+        var el1 = form.querySelector('input[name="q1"][value="' + q1 + '"]');
+        if (el1) el1.checked = true;
+      }
+      if (q2) {
+        var el2 = form.querySelector('input[name="q2"][value="' + q2 + '"]');
+        if (el2) el2.checked = true;
+      }
+      if (q3) {
+        var el3 = form.querySelector('input[name="q3"][value="' + q3 + '"]');
+        if (el3) el3.checked = true;
+      }
+      if (q5) {
+        var el5 = form.querySelector('input[name="q5"][value="' + q5 + '"]');
+        if (el5) el5.checked = true;
+      }
+      if (q4) {
+        var parts = q4.split(",").map(function (s) {
+          return s.trim();
+        });
+        form.querySelectorAll('input[name="q4"]').forEach(function (el) {
+          el.checked = parts.indexOf(el.value) >= 0;
+        });
+      }
+      if (params.get("auto") === "1") {
+        var ready =
+          form.querySelector('input[name="q1"]:checked') &&
+          form.querySelector('input[name="q2"]:checked') &&
+          form.querySelector('input[name="q3"]:checked') &&
+          form.querySelector('input[name="q5"]:checked');
+        if (ready) {
+          form.requestSubmit();
+        }
+      }
+    })();
   }
 
   if (document.readyState === "loading") {

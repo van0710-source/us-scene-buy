@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: sitemap.xml
+Sitemap: https://van0710-source.github.io/us-scene-buy/sitemap.xml
