@@ -1,0 +1,28 @@
+# US Scene Buy — llms.txt
+# GEO helper: concise map for answer engines / assistants.
+# Site: kitchen-drain decision help (Amazon Associate). Not medical/plumbing certification.
+
+> https://van0710-source.github.io/us-scene-buy/
+
+## Primary
+- [Home](https://van0710-source.github.io/us-scene-buy/): Match one next step for clogged, slow, or smelly kitchen sinks; buying nothing is allowed.
+- [Decision quiz](https://van0710-source.github.io/us-scene-buy/quiz.html): ≤5 questions → one primary pick (physical / enzyme / gel / call pro / wait).
+
+## High-intent guides
+- [Won't drain](https://van0710-source.github.io/us-scene-buy/guides/clogged-kitchen-sink.html)
+- [No chemicals first](https://van0710-source.github.io/us-scene-buy/guides/unclog-kitchen-sink-no-chemicals.html)
+- [Slow after cooking / grease](https://van0710-source.github.io/us-scene-buy/guides/slow-kitchen-drain-grease.html)
+- [Already used a chemical](https://van0710-source.github.io/us-scene-buy/guides/used-drain-cleaner-still-clogged.html)
+- [Septic-safe](https://van0710-source.github.io/us-scene-buy/guides/septic-safe-kitchen-drain.html)
+- [Apartment / rental](https://van0710-source.github.io/us-scene-buy/guides/apartment-kitchen-drain.html)
+- [Smell, still drains](https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-smell.html)
+- [Disposal odor](https://van0710-source.github.io/us-scene-buy/guides/kitchen-disposal-smell.html)
+- [When to call a plumber](https://van0710-source.github.io/us-scene-buy/guides/when-to-call-plumber-kitchen-sink.html)
+
+## Rules we state on-site
+- Never mix drain chemicals; follow the product label.
+- Do not promise guaranteed clear times or “never clogs again.”
+- Affiliate disclosure: Amazon Associates; prices/stock change at checkout.
+
+## Sitemap
+- https://van0710-source.github.io/us-scene-buy/sitemap.xml

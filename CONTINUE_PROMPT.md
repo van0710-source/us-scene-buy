@@ -2,25 +2,27 @@
 
 ---
 
-请先阅读：`AGENTS.md`、`docs/00-decisions.md`、`docs/08-ops-roadmap.md`、`docs/06-next-steps.md`、`ops/acquisition-week1.md`、`site/`。
+请先阅读：`AGENTS.md`、`docs/00-decisions.md`、`docs/08-ops-roadmap.md`、`docs/06-next-steps.md`、`docs/10-social-subaccount-persona.md`、`ops/acquisition-week1.md`、`site/`。  
+跨仓（只读除非改口令）：`/Users/apple/Projects/growth`（Maya、子号暂缓、affiliate 披露）。
 
 ## 摘要
 
 US Scene Buy：美国纯联盟厨房排水站。  
 https://van0710-source.github.io/us-scene-buy/  
-Associates `usscenebuy-20`；税 Validated / 0%；Direct Deposit。无收入不投放。
+Associates `usscenebuy-20`；税 Validated / 0%；Direct Deposit。无收入不投放。  
+**社媒：本阶段不起号**（除非本仓 Agent 可自动发帖且书面改口令）。默认 SEO；GEO 按需。
 
 ## 获客边界（锁定）
 
-- **Agent 自主**：写页、部署、IndexNow、站内转化；不要求用户发帖/日常 SEO。  
-- **不做**：代注册/代发 Reddit 等社区（需真人账号，Agent 无法合法代持）。  
-- GSC 验证+sitemap 用户已完成。
+- **本仓 Agent**：站内 SEO / 按需 GEO / IndexNow / 转化；不代持社媒、不起号。  
+- **growth**：主号 Maya；本站非已定稿子号。  
+- 子号草案 `docs/10` = **停泊**。
 
 ## 本次请继续
 
-1. 扩高意图指南 / 内链 / FAQ schema  
-2. 确认 IndexNow CI 与脚本可用  
-3. 勿扩多品类；勿建议付费投放；勿再把获客甩给用户发帖  
+1. 站内高意图页 / 内链 / FAQ·HowTo·llms.txt  
+2. 勿开社媒号；勿让 Maya 扛联盟 KPI  
+3. 勿扩多品类；勿无收入付费投放  
 
 工作语言：中文。
 

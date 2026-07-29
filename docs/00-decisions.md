@@ -36,3 +36,5 @@
 - 自营收款代发
 - 「确认收货后再付供货方」类中间人模式
 - 全品类购物平台叙事
+- **未改口令前**：把本站当成已在跑的 IG/TikTok 导购子号；或用主号 Maya 扛联盟硬转化（跨仓见 growth；草案 [`10-social-subaccount-persona.md`](10-social-subaccount-persona.md)）
+- **本阶段不起号**：除非书面确认本仓 Agent 可做自动发帖；获客默认 SEO，GEO 按需、不强制开号

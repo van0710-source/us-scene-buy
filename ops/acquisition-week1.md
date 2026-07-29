@@ -1,16 +1,17 @@
 # 获客运营（Agent 自主路径）
 
-更新日期：2026-07-18
+更新日期：2026-07-29
 
 ## 边界（已锁定）
 
 | 谁做 | 做什么 |
 |------|--------|
 | **Agent 自主** | 写指南、改转化、部署 Pages、IndexNow 提交、扩 sitemap/FAQ schema |
-| **不要求用户** | Reddit / Quora / 论坛发帖、日常 SEO 后台操作 |
+| **growth 仓** | Maya 主号人设 / 开号 / 披露红线；us-scene-buy **不是**已定稿社媒子号 |
+| **不要求用户** | Reddit / Quora / 论坛发帖、日常 SEO 后台操作、未批准的子号运营 |
 | **用户仅一次（已完成）** | GSC 验证 + 提交 sitemap（账号必须本人） |
 
-Reddit 等社区：需要真人账号与养号，**Agent 不能合法代注册/代发**；本项目默认**不做社区发帖**，除非你以后自愿自己发。
+Reddit / 导购子号：**本阶段不起号**。开号仅当本仓 Agent 具备自动发帖（含审批）且书面改口令。默认 SEO；GEO 见 `site/llms.txt` 与页内 FAQ schema。草案停泊：[`docs/10-social-subaccount-persona.md`](../docs/10-social-subaccount-persona.md)。
 
 ## Agent 已接通的获客管道
 

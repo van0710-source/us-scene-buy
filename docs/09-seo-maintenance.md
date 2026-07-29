@@ -22,7 +22,7 @@
 | T03 | P0 | 异味 | kitchen sink smells like sewage / rotten | 仅异味 vs 慢+臭、disposal | 常 → 样例 D；先非购买清洁 |
 | T04 | P0 | 化粪池 | septic safe drain cleaner kitchen | 强制 septic；禁强化学主推恐吓 | → 酶/物理；挂养护 |
 | T05 | P0 | 租房限制 | apartment kitchen drain clog landlord | rental_no_harsh | → 物理/酶；提示房东规则 |
-| T06 | P1 | 已用化学剂 | used Drano still clogged | tried_chemical → 拒叠用 | → 拒答 R2 + 物理/管道工 |
+| T06 | P1 | 已用化学剂 | used Drano still clogged | tried_chemical → 拒叠用 | → 拒答 R2 + 物理/管道工 · **已有页** `guides/used-drain-cleaner-still-clogged.html` |
 | T07 | P1 | 有 disposal | garbage disposal clogged smelling | disposal_yes | → 勿乱倒化学；工具/酶/检查卡物 |
 | T08 | P1 | 老旧管道 | cast iron drain clog kitchen safe | old_pipes | → 保守；慎强化学 |
 | T09 | P1 | 酶 vs 化学 | enzyme vs chemical drain cleaner kitchen | 维护 vs 急救意图 | → 讲清标签用途差；导问卷 |
