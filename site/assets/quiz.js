@@ -42,6 +42,7 @@
     S5: {
       id: "S5",
       name: "Cup-style sink plunger (basin / sink — not toilet flange)",
+      // Search keeps options flexible; tag still attributes Associates clicks.
       url: () => {
         var u = "https://www.amazon.com/s?k=cup+sink+plunger+basin";
         if (AFFILIATE_TAG) {
@@ -389,11 +390,11 @@
         <p>${esc(note)}</p>
         ${habits}
         <div class="actions">
-          <a class="btn primary" href="${esc(ctaSku.url())}" target="_blank" rel="noopener noreferrer">Peek at a maintenance option</a>
+          <a class="btn primary" href="${esc(ctaSku.url())}" target="_blank" rel="noopener noreferrer sponsored">Check price on Amazon</a>
           <a class="btn ghost" href="guides/prevent-grease-clog.html">Prevention habits</a>
           <button type="button" class="ghost" id="habits-only">Not now</button>
         </div>
-        <p class="hint">Product links are plain Amazon URLs (no affiliate tag yet). Always verify the label.</p>
+        <p class="hint">Tip: add the item to your Amazon cart within 24 hours of clicking so attribution can stick. Always verify the label.</p>
       </div>`;
   }
 
@@ -421,7 +422,10 @@
           ${extra.notFor ? `<li><strong>Not for:</strong> ${esc(extra.notFor)}</li>` : ""}
           ${extra.why ? `<li><strong>Better if:</strong> ${esc(extra.why)}</li>` : ""}
         </ul>
-        <p><a class="btn primary" href="${esc(sku.url())}" target="_blank" rel="noopener noreferrer">View on Amazon</a></p>
+        <p class="actions">
+          <a class="btn primary" href="${esc(sku.url())}" target="_blank" rel="noopener noreferrer sponsored">Check price on Amazon</a>
+        </p>
+        <p class="hint">Open Amazon, then add to cart if it fits — don’t wait days if you want this click to count.</p>
       </div>`;
   }
 

@@ -1,7 +1,7 @@
 # P1：SEO 选题地图 + ③→① 养护路径
 
 更新日期：2026-07-17  
-获客默认 **零付费**（见 [`08-ops-roadmap.md`](08-ops-roadmap.md)）。页内 CTA 一律导向约束问卷（[`07`](07-mvp-kitchen-drain.md)），不单堆商品链。
+获客默认 **零付费**（见 [`08-ops-roadmap.md`](08-ops-roadmap.md)）。页内 CTA 一律导向：**主推商品盒（Check price on Amazon）** + 可选约束问卷；不单堆无上下文商品链，也不再「只导问卷」。
 
 ---
 
@@ -24,13 +24,13 @@
 | T05 | P0 | 租房限制 | apartment kitchen drain clog landlord | rental_no_harsh | → 物理/酶；提示房东规则 |
 | T06 | P1 | 已用化学剂 | used Drano still clogged | tried_chemical → 拒叠用 | → 拒答 R2 + 物理/管道工 · **已有页** `guides/used-drain-cleaner-still-clogged.html` |
 | T07 | P1 | 有 disposal | garbage disposal clogged smelling | disposal_yes | → 勿乱倒化学；工具/酶/检查卡物 |
-| T08 | P1 | 老旧管道 | cast iron drain clog kitchen safe | old_pipes | → 保守；慎强化学 |
+| T08 | P1 | 老旧管道 | cast iron drain clog kitchen safe | old_pipes | → 保守；慎强化学 · **已有页** `guides/old-pipes-kitchen-drain.html` |
 | T09 | P1 | 酶 vs 化学 | enzyme vs chemical drain cleaner kitchen | 维护 vs 急救意图 | → 讲清标签用途差；导问卷 |
 | T10 | P1 | 不买/先物理 | unclog kitchen sink without chemicals | 愿意物理 | → Zip-It/皮搋子路径 |
 | T11 | P2 | 化粪池异味系统级 | septic tank odor vs sink trap | 超出单槽则 R5 | → 何时该叫专业人士 |
 | T12 | P2 | 预防/养护 | prevent kitchen grease clog monthly | 非急救 | → 直接 ① 养护文案 |
 | T13 | P2 | 管道工边界 | when to call plumber vs drain cleaner | full_clog 反复 | → 不买商品也可 |
-| T14 | P2 | 市政 vs 化粪池教育 | city sewer vs septic drain cleaner | Q2 为何改变推荐 | → 进问卷 |
+| T14 | P2 | 市政 vs 化粪池教育 | city sewer vs septic drain cleaner | Q2 为何改变推荐 | → 进问卷 · **已有页** `guides/sewer-vs-septic-drain-cleaner.html` |
 
 ### 1.3 内链与避坑
 

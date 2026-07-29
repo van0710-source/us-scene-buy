@@ -1,27 +1,37 @@
 # US Scene Buy — llms.txt
 # GEO helper: concise map for answer engines / assistants.
-# Site: kitchen-drain decision help (Amazon Associate). Not medical/plumbing certification.
+# Site: scene decision help + Amazon Associate links. Not medical/plumbing certification.
 
 > https://van0710-source.github.io/us-scene-buy/
 
 ## Primary
 - [Home](https://van0710-source.github.io/us-scene-buy/): Match one next step for clogged, slow, or smelly kitchen sinks; buying nothing is allowed.
-- [Decision quiz](https://van0710-source.github.io/us-scene-buy/quiz.html): ≤5 questions → one primary pick (physical / enzyme / gel / call pro / wait).
+- [Decision quiz](https://van0710-source.github.io/us-scene-buy/quiz.html): ≤5 questions → one primary pick (physical / enzyme / gel / call pro / wait) with Amazon check-price links.
 
-## High-intent guides
+## High-intent kitchen drain guides (product boxes on page)
 - [Won't drain](https://van0710-source.github.io/us-scene-buy/guides/clogged-kitchen-sink.html)
 - [No chemicals first](https://van0710-source.github.io/us-scene-buy/guides/unclog-kitchen-sink-no-chemicals.html)
 - [Slow after cooking / grease](https://van0710-source.github.io/us-scene-buy/guides/slow-kitchen-drain-grease.html)
+- [Enzyme shortlist](https://van0710-source.github.io/us-scene-buy/guides/best-enzyme-drain-cleaner-kitchen.html)
+- [Enzyme vs chemical gel](https://van0710-source.github.io/us-scene-buy/guides/enzyme-vs-chemical-drain-cleaner.html)
 - [Already used a chemical](https://van0710-source.github.io/us-scene-buy/guides/used-drain-cleaner-still-clogged.html)
+- [Old / cast iron pipes](https://van0710-source.github.io/us-scene-buy/guides/old-pipes-kitchen-drain.html)
+- [Sewer vs septic](https://van0710-source.github.io/us-scene-buy/guides/sewer-vs-septic-drain-cleaner.html)
 - [Septic-safe](https://van0710-source.github.io/us-scene-buy/guides/septic-safe-kitchen-drain.html)
 - [Apartment / rental](https://van0710-source.github.io/us-scene-buy/guides/apartment-kitchen-drain.html)
 - [Smell, still drains](https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-smell.html)
 - [Disposal odor](https://van0710-source.github.io/us-scene-buy/guides/kitchen-disposal-smell.html)
 - [When to call a plumber](https://van0710-source.github.io/us-scene-buy/guides/when-to-call-plumber-kitchen-sink.html)
+- [Prevent grease clogs](https://van0710-source.github.io/us-scene-buy/guides/prevent-grease-clog.html)
+
+## Conversion probes (other scenes)
+- [Air purifier by room size](https://van0710-source.github.io/us-scene-buy/guides/air-purifier-room-size.html): CADR / coverage match; not medical advice.
+- [Hard floor cleaner pick](https://van0710-source.github.io/us-scene-buy/guides/hard-floor-cleaner-pick.html): tile / LVP / hardwood constraint → cleaner or wet vac.
 
 ## Rules we state on-site
 - Never mix drain chemicals; follow the product label.
 - Do not promise guaranteed clear times or “never clogs again.”
+- Guides show a primary pick + Amazon “Check price” CTA; quiz is optional refine.
 - Affiliate disclosure: Amazon Associates; prices/stock change at checkout.
 
 ## Sitemap

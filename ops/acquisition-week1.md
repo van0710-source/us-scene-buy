@@ -13,24 +13,43 @@
 
 Reddit / 导购子号：**本阶段不起号**。开号仅当本仓 Agent 具备自动发帖（含审批）且书面改口令。默认 SEO；GEO 见 `site/llms.txt` 与页内 FAQ schema。草案停泊：[`docs/10-social-subaccount-persona.md`](../docs/10-social-subaccount-persona.md)。
 
+## 转化定位（2026-07-29 改口令）
+
+- 角色：决策**末段**短推一把（主推 1 + Check price），不是深度评测站。
+- 指南页：**首屏可出站**（商品盒 + 对照表）；问卷是加深路径，不是唯一 CTA。
+- 探针：排水主线转化修复 + 空气房间匹配 + 硬地材质匹配（各可独立看 Associates Clicks）。
+
 ## Agent 已接通的获客管道
 
 1. **站内 SEO**：高意图指南 + 问卷深链 + FAQ JSON-LD  
 2. **IndexNow**：`scripts/indexnow-submit.sh`；每次 Pages 部署后 CI 自动提交  
 3. **GSC sitemap**：你已提交；后续抓取由 Google 处理  
-4. **联盟转化**：`tag=usscenebuy-20` 已挂在商品链上  
+4. **联盟转化**：`tag=usscenebuy-20` 已挂在商品链与指南商品盒上  
 
 站点：https://van0710-source.github.io/us-scene-buy/
 
+## 本周看什么（成交相关）
+
+| 指标 | 哪里看 |
+|------|--------|
+| Clicks | Associates 报表（按 ASIN / 日期） |
+| Orders | Associates Orders / Ordered items |
+| 展示 | GSC 展示/点击（有机是否开始） |
+
+软测加速：把带商品盒的页发给 5～15 个真实场景用户，先验证出站点击。
+
 ## 现实预期（零付费）
 
-- 有机流量通常要 **数周～数月** 才稳定，不是发帖当天出单。  
-- 「快速转化」在无投放约束下 = **持续加页 + 索引 + 问卷转化率**，不是 Agent 假装运营 Reddit。  
+- 有机流量通常要 **数周～数月** 才稳定。  
+- 「尽快佣金」= **页内可点 Amazon + 索引 + 软测点击**；无访问时报表为零不证明定位错。  
 
-## 短链（内部/需要时用）
+## 短链
 
 ```
 Home:  https://van0710-source.github.io/us-scene-buy/
 Quiz:  https://van0710-source.github.io/us-scene-buy/quiz.html
+Enzyme: https://van0710-source.github.io/us-scene-buy/guides/best-enzyme-drain-cleaner-kitchen.html
+Air: https://van0710-source.github.io/us-scene-buy/guides/air-purifier-room-size.html
+Floor: https://van0710-source.github.io/us-scene-buy/guides/hard-floor-cleaner-pick.html
 Sitemap: https://van0710-source.github.io/us-scene-buy/sitemap.xml
 ```

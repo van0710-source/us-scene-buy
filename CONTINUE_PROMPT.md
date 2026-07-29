@@ -20,9 +20,10 @@ Associates `usscenebuy-20`；税 Validated / 0%；Direct Deposit。无收入不�
 
 ## 本次请继续
 
-1. 站内高意图页 / 内链 / FAQ·HowTo·llms.txt  
-2. 勿开社媒号；勿让 Maya 扛联盟 KPI  
-3. 勿扩多品类；勿无收入付费投放  
+1. 站内高意图页：**首屏主推盒 + Check price**；问卷为加深路径  
+2. 盯 Associates Clicks / Orders；有访问无点击再改文案  
+3. 勿开社媒号；勿让 Maya 扛联盟 KPI  
+4. 探针仅排水 + 空气房间匹配 + 硬地材质；勿无收入付费投放  
 
 工作语言：中文。
 
