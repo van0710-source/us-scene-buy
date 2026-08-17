@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://van0710-source.github.io/us-scene-buy/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/quiz.html</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://van0710-source.github.io/us-scene-buy/guides/</loc><lastmod>2026-08-17</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://van0710-source.github.io/us-scene-buy/about.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://van0710-source.github.io/us-scene-buy/privacy.html</loc><lastmod>2026-08-17</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/guides/slow-kitchen-drain-grease.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/guides/septic-safe-kitchen-drain.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-smell.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
@@ -14,12 +17,15 @@
   <url><loc>https://van0710-source.github.io/us-scene-buy/guides/enzyme-vs-chemical-drain-cleaner.html</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/guides/air-purifier-room-size.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/guides/hard-floor-cleaner-pick.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-clogged-dishwashing.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-clogged-dishwashing.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/guides/drain-cleaner-with-garbage-disposal.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/guides/baking-soda-vinegar-kitchen-drain.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/guides/when-to-call-plumber-kitchen-sink.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://van0710-source.github.io/us-scene-buy/guides/used-drain-cleaner-still-clogged.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://van0710-source.github.io/us-scene-buy/guides/used-drain-cleaner-still-clogged.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/guides/old-pipes-kitchen-drain.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/guides/sewer-vs-septic-drain-cleaner.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-smells-when-dishwasher-runs.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://van0710-source.github.io/us-scene-buy/guides/drain-cleaner-safe-for-pvc-pipes.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://van0710-source.github.io/us-scene-buy/guides/black-sludge-kitchen-sink-drain.html</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://van0710-source.github.io/us-scene-buy/llms.txt</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>

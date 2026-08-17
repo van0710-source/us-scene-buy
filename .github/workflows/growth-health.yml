@@ -1,0 +1,25 @@
+name: Weekly organic growth health
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 13 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check crawl, disclosure, and local links
+        run: python3 scripts/site-audit.py
+      - name: Check live entry points
+        run: |
+          curl --fail --silent --show-error --retry 3 \
+            https://van0710-source.github.io/us-scene-buy/ >/dev/null
+          curl --fail --silent --show-error --retry 3 \
+            https://van0710-source.github.io/us-scene-buy/guides/ >/dev/null
+          curl --fail --silent --show-error --retry 3 \
+            https://van0710-source.github.io/us-scene-buy/sitemap.xml >/dev/null

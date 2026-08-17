@@ -7,6 +7,8 @@
 ## Primary
 - [Home](https://van0710-source.github.io/us-scene-buy/): Match one next step for clogged, slow, or smelly kitchen sinks; buying nothing is allowed.
 - [Decision quiz](https://van0710-source.github.io/us-scene-buy/quiz.html): ≤5 questions → one primary pick (physical / enzyme / gel / call pro / wait) with Amazon check-price links.
+- [Guides by symptom](https://van0710-source.github.io/us-scene-buy/guides/): Urgent, slow/smelly, and compatibility paths.
+- [How recommendations are made](https://van0710-source.github.io/us-scene-buy/about.html): Constraints, evidence labels, and no-buy boundaries.
 
 ## High-intent kitchen drain guides (product boxes on page)
 - [Won't drain](https://van0710-source.github.io/us-scene-buy/guides/clogged-kitchen-sink.html)
@@ -23,6 +25,9 @@
 - [Disposal odor](https://van0710-source.github.io/us-scene-buy/guides/kitchen-disposal-smell.html)
 - [When to call a plumber](https://van0710-source.github.io/us-scene-buy/guides/when-to-call-plumber-kitchen-sink.html)
 - [Prevent grease clogs](https://van0710-source.github.io/us-scene-buy/guides/prevent-grease-clog.html)
+- [Smells when dishwasher runs](https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-smells-when-dishwasher-runs.html)
+- [Drain cleaner and PVC pipes](https://van0710-source.github.io/us-scene-buy/guides/drain-cleaner-safe-for-pvc-pipes.html)
+- [Black sludge in kitchen drain](https://van0710-source.github.io/us-scene-buy/guides/black-sludge-kitchen-sink-drain.html)
 
 ## Conversion probes (other scenes)
 - [Air purifier by room size](https://van0710-source.github.io/us-scene-buy/guides/air-purifier-room-size.html): CADR / coverage match; not medical advice.
@@ -36,3 +41,4 @@
 
 ## Sitemap
 - https://van0710-source.github.io/us-scene-buy/sitemap.xml
+- https://van0710-source.github.io/us-scene-buy/feed.xml

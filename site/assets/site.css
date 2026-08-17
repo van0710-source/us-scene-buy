@@ -145,6 +145,26 @@ a:hover { color: var(--deep); }
   font-size: 1.05rem;
 }
 
+.hero-compact {
+  padding: 2rem 0 1.5rem;
+}
+
+.hero-compact h1 {
+  max-width: 24em;
+  margin: 0 0 0.75rem;
+  font-family: var(--display);
+  color: var(--deep);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.hero-compact .lede {
+  max-width: 42em;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -222,6 +242,7 @@ a:hover { color: var(--deep); }
   border-color: #9db5a8;
 }
 
+.guide-card h2,
 .guide-card h3 {
   font-family: var(--display);
   font-size: 1.1rem;

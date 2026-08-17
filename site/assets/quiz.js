@@ -394,7 +394,7 @@
           <a class="btn ghost" href="guides/prevent-grease-clog.html">Prevention habits</a>
           <button type="button" class="ghost" id="habits-only">Not now</button>
         </div>
-        <p class="hint">Tip: add the item to your Amazon cart within 24 hours of clicking so attribution can stick. Always verify the label.</p>
+        <p class="hint">Always verify the current label and product details before buying.</p>
       </div>`;
   }
 
@@ -425,7 +425,7 @@
         <p class="actions">
           <a class="btn primary" href="${esc(sku.url())}" target="_blank" rel="noopener noreferrer sponsored">Check price on Amazon</a>
         </p>
-        <p class="hint">Open Amazon, then add to cart if it fits — don’t wait days if you want this click to count.</p>
+        <p class="hint">Open Amazon only when the recommendation fits, then verify the current label and product details.</p>
       </div>`;
   }
 

@@ -8,12 +8,17 @@ KEY_LOCATION="https://${HOST}/us-scene-buy/${KEY}.txt"
 SITEMAP="https://${HOST}/us-scene-buy/sitemap.xml"
 
 TMP_URLS="$(mktemp)"
-trap 'rm -f "$TMP_URLS"' EXIT
+TMP_RESPONSE="$(mktemp)"
+trap 'rm -f "$TMP_URLS" "$TMP_RESPONSE"' EXIT
 
-if ! curl -fsSL "$SITEMAP" | grep -oE 'https://[^<]+' >"$TMP_URLS"; then
-  echo "Failed to fetch sitemap" >&2
-  exit 1
-fi
+curl -fsSL "$SITEMAP" | python3 -c '
+import sys
+import xml.etree.ElementTree as ET
+root = ET.parse(sys.stdin).getroot()
+for node in root.findall("{http://www.sitemaps.org/schemas/sitemap/0.9}url/{http://www.sitemaps.org/schemas/sitemap/0.9}loc"):
+    if node.text:
+        print(node.text.strip())
+' >"$TMP_URLS"
 
 COUNT=$(wc -l <"$TMP_URLS" | tr -d ' ')
 echo "Submitting ${COUNT} URLs to IndexNow…"
@@ -32,12 +37,17 @@ print(json.dumps({
 PY
 )
 
-code=$(curl -sS -o /tmp/indexnow-out.txt -w "%{http_code}" \
+code=$(curl -sS -o "$TMP_RESPONSE" -w "%{http_code}" \
   -X POST "https://api.indexnow.org/indexnow" \
   -H "Content-Type: application/json; charset=utf-8" \
   -d "$JSON")
 echo "HTTP $code"
-cat /tmp/indexnow-out.txt 2>/dev/null || true
+python3 - "$TMP_RESPONSE" <<'PY'
+from pathlib import Path
+import sys
+
+print(Path(sys.argv[1]).read_text(errors="replace"), end="")
+PY
 echo
 case "$code" in
   200|202) exit 0 ;;

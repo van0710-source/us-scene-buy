@@ -2,6 +2,13 @@
 
 美国市场、纯联盟模式的 **场景利益点购物决策助手**（细分垂直起步）。
 
+**Live site:** https://van0710-source.github.io/us-scene-buy/
+
+Current public tools:
+- [Kitchen drain decision quiz](https://van0710-source.github.io/us-scene-buy/quiz.html)
+- [Browse guides by symptom](https://van0710-source.github.io/us-scene-buy/guides/)
+- [How recommendations are made](https://van0710-source.github.io/us-scene-buy/about.html)
+
 ## 一句话定位
 
 面向细分家居场景：先问清用户约束，再给出「对你意味着什么」的利益点 + 可核对参数锚 + 联盟追踪链接；不经手货款。
