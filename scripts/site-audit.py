@@ -57,6 +57,10 @@ def main() -> int:
         for signal in ('name="description"', 'rel="canonical"'):
             if signal not in lower:
                 errors.append(f"{rel}: missing {signal}")
+        if 'assets/favicon.svg' not in text:
+            errors.append(f"{rel}: missing favicon link")
+        if 'assets/site.js' not in text:
+            errors.append(f"{rel}: missing site.js")
         if "as an amazon associate" not in lower:
             errors.append(f"{rel}: missing Amazon disclosure")
         for phrase in FORBIDDEN_COPY:

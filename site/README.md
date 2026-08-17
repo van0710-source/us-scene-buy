@@ -1,19 +1,19 @@
-# Kitchen drain mini-site (MVP)
+# Kitchen drain mini-site
 
-Static site for Associates application + organic SEO. **Single vertical only** (kitchen drain) — not a multi-category portal.
+Static site for Amazon Associates + organic SEO. **Single vertical** (kitchen drain) with a few conversion probes.
+
+Live: https://van0710-source.github.io/us-scene-buy/
 
 ## Pages
 
 | Path | Role |
 |------|------|
-| `index.html` | Home |
+| `index.html` | Home + symptom grid |
 | `quiz.html` | Constraint quiz → one primary pick |
-| `guides/slow-kitchen-drain-grease.html` | T02 |
-| `guides/septic-safe-kitchen-drain.html` | T04 |
-| `guides/kitchen-sink-smell.html` | T03 |
-| `guides/prevent-grease-clog.html` | ③→① prevention |
+| `guides/index.html` | Guides hub by symptom |
+| `guides/*.html` | High-intent SEO + contextual Amazon CTAs |
 
-Product links are **untagged** Amazon URLs until Associates approval. Every page includes affiliate disclosure + safety copy.
+Product links use Associates tag **`usscenebuy-20`**. Every commercial page includes affiliate disclosure + safety copy.
 
 ## Local preview
 
@@ -22,6 +22,6 @@ cd site && python3 -m http.server 8080
 # open http://127.0.0.1:8080/
 ```
 
-## Next ops step
+## Deploy
 
-Deploy to a public HTTPS URL (GitHub Pages, Cloudflare Pages, Netlify, etc.), then apply to **Amazon Associates** with that URL (see `docs/08-ops-roadmap.md` Phase 2).
+Push to `main` → GitHub Pages workflow deploys `site/` and runs IndexNow.
