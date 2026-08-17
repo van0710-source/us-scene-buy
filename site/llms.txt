@@ -28,6 +28,9 @@
 - [Smells when dishwasher runs](https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-smells-when-dishwasher-runs.html)
 - [Drain cleaner and PVC pipes](https://van0710-source.github.io/us-scene-buy/guides/drain-cleaner-safe-for-pvc-pipes.html)
 - [Black sludge in kitchen drain](https://van0710-source.github.io/us-scene-buy/guides/black-sludge-kitchen-sink-drain.html)
+- [Baking soda myth-check](https://van0710-source.github.io/us-scene-buy/guides/baking-soda-vinegar-kitchen-drain.html)
+- [Cleaner + disposal](https://van0710-source.github.io/us-scene-buy/guides/drain-cleaner-with-garbage-disposal.html)
+- [After dishwashing clog](https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-clogged-dishwashing.html)
 
 ## Conversion probes (other scenes)
 - [Air purifier by room size](https://van0710-source.github.io/us-scene-buy/guides/air-purifier-room-size.html): CADR / coverage match; not medical advice.
