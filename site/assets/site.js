@@ -1,3 +1,19 @@
+// Phase B · Umami Cloud (Hobby, $0). Paste website UUID from cloud.umami.is → Settings → Websites.
+// Leave empty to disable; no script loads until set.
+var USB_UMAMI = {
+  websiteId: "3eb5fde2-b2e6-41e8-98ad-9c84cd7bb6e9",
+  scriptSrc: "https://cloud.umami.is/script.js",
+};
+
+(function loadUmami() {
+  if (!USB_UMAMI.websiteId) return;
+  var s = document.createElement("script");
+  s.defer = true;
+  s.src = USB_UMAMI.scriptSrc;
+  s.setAttribute("data-website-id", USB_UMAMI.websiteId);
+  document.head.appendChild(s);
+})();
+
 (function () {
   var STORAGE_KEY = "usb_visit";
   var today = new Date().toISOString().slice(0, 10);
