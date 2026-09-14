@@ -5,14 +5,15 @@
     "slug": "roborock-qrevo-pro-replacement-parts",
     "aliases": ["Q Revo Pro"],
     "fit_family": "Standard Qrevo round-mop family",
-    "warning": "Do not substitute Qrevo Curv, Qrevo Edge, Qrevo Master, or S8-series brush and mop parts just because the names look similar.",
+    "warning": "Use the later Qrevo Filter-E family—not the original Q Revo Filter-B. Qrevo S Pro is a separate model, and Curv/Edge DuoDivide brushes do not fit.",
     "parts": [
       {"type": "Dust bags", "fit": "Qrevo-series dock dust bags; the official bag page includes Qrevo Pro.", "query": "Roborock Qrevo Pro dust bags"},
-      {"type": "Washable filters", "fit": "Qrevo Pro washable-filter family; the official filter compatibility list includes Pro.", "query": "Roborock Qrevo Pro washable filters"},
+      {"type": "Washable filters", "fit": "Later Qrevo Filter-E family; the official compatibility list includes Pro. Original Q Revo Filter-B does not fit.", "query": "Roborock Qrevo Pro Filter E washable filters"},
       {"type": "Mop cloths", "fit": "Round spinning mop cloths listed by Roborock for Qrevo Pro.", "query": "Roborock Qrevo Pro mop cloth replacement"},
       {"type": "Main brush", "fit": "Standard all-rubber Qrevo main brush; the official list includes Qrevo Pro.", "query": "Roborock Qrevo Pro main brush replacement"}
     ],
     "sources": [
+      {"label": "Roborock Qrevo Pro official user manual", "url": "https://support.roborock.com/hc/en-us/articles/31584672715929-Roborock-Qrevo-Pro-FCC-User-Manual-EN-FR-ES-Latin-Br-Pt"},
       {"label": "Roborock Qrevo-series dust bag compatibility", "url": "https://us.roborock.com/products/roborock-dust-bag-6pcs-for-q-revo"},
       {"label": "Roborock Qrevo mop cloth compatibility", "url": "https://us.roborock.com/products/roborock-mop-cloth-4pcs-for-q-revo"},
       {"label": "Roborock Qrevo MaxV accessory compatibility list", "url": "https://us.roborock.com/products/roborock-qrevo-maxv"},
@@ -25,15 +26,16 @@
     "slug": "roborock-qrevo-maxv-replacement-parts",
     "aliases": ["Q Revo MaxV"],
     "fit_family": "Standard Qrevo round-mop family",
-    "warning": "Qrevo MaxV is not S8 MaxV Ultra. Their names share “MaxV,” but their mop and brush systems are different.",
+    "warning": "Qrevo MaxV is not S8 MaxV Ultra. Use the later Qrevo Filter-E family—not original Q Revo Filter-B—and avoid Curv/Edge DuoDivide brushes.",
     "parts": [
       {"type": "Dust bags", "fit": "Qrevo-series dock dust bags; the official bag page includes Qrevo MaxV.", "query": "Roborock Qrevo MaxV dust bags"},
-      {"type": "Washable filters", "fit": "Qrevo MaxV washable-filter family listed by Roborock.", "query": "Roborock Qrevo MaxV washable filters"},
+      {"type": "Washable filters", "fit": "Later Qrevo Filter-E family listed for MaxV. Original Q Revo Filter-B does not fit.", "query": "Roborock Qrevo MaxV Filter E washable filters"},
       {"type": "Mop cloths", "fit": "Round spinning Qrevo mop cloths; the official cloth page includes MaxV.", "query": "Roborock Qrevo MaxV mop cloth replacement"},
       {"type": "Main brush", "fit": "Standard all-rubber Qrevo main brush listed for Qrevo MaxV.", "query": "Roborock Qrevo MaxV main brush replacement"}
     ],
     "sources": [
       {"label": "Roborock Qrevo MaxV product and accessory list", "url": "https://us.roborock.com/products/roborock-qrevo-maxv"},
+      {"label": "Roborock Qrevo MaxV official user manual", "url": "https://support.roborock.com/hc/en-us/articles/31557088409753-Roborock-Qrevo-MaxV-FCC-user-manual"},
       {"label": "Roborock Qrevo-series dust bag compatibility", "url": "https://us.roborock.com/products/roborock-dust-bag-6pcs-for-q-revo"},
       {"label": "Roborock Qrevo mop cloth compatibility", "url": "https://us.roborock.com/products/roborock-mop-cloth-4pcs-for-q-revo"},
       {"label": "Roborock Qrevo washable-filter compatibility list", "url": "https://us.roborock.com/products/roborock-qrevo-edge-s5a"}
@@ -45,14 +47,16 @@
     "slug": "roborock-qrevo-s-replacement-parts",
     "aliases": ["Q Revo S"],
     "fit_family": "Standard Qrevo round-mop family",
-    "warning": "Do not buy Qrevo Curv or Qrevo Edge DuoDivide brush parts for Qrevo S. Those newer models use a different brush system.",
+    "warning": "Use the later Qrevo Filter-E family—not original Q Revo Filter-B. Do not buy Qrevo Curv or Qrevo Edge DuoDivide brush parts for Qrevo S.",
     "parts": [
       {"type": "Dust bags", "fit": "Qrevo-series dock dust bags; confirm Qrevo S in the current listing.", "query": "Roborock Qrevo S dust bags"},
-      {"type": "Washable filters", "fit": "Qrevo S washable-filter family explicitly listed by Roborock.", "query": "Roborock Qrevo S washable filters"},
+      {"type": "Washable filters", "fit": "Later Qrevo Filter-E family explicitly listed for Qrevo S. Original Q Revo Filter-B does not fit.", "query": "Roborock Qrevo S Filter E washable filters"},
       {"type": "Mop cloths", "fit": "Round spinning mop cloths listed by Roborock for Qrevo S.", "query": "Roborock Qrevo S mop cloth replacement"},
       {"type": "Main brush", "fit": "Standard all-rubber Qrevo main brush; the official list includes Qrevo S.", "query": "Roborock Qrevo S main brush replacement"}
     ],
     "sources": [
+      {"label": "Roborock Qrevo S product page", "url": "https://us.roborock.com/products/roborock-qrevo-s-vacuum"},
+      {"label": "Roborock Qrevo S official user manual", "url": "https://support.roborock.com/hc/en-us/articles/33210757493913-Roborock-Qrevo-S-FCC-User-Manual-EN-FR-ES-Latin-Br-Pt"},
       {"label": "Roborock Qrevo-series dust bag compatibility", "url": "https://us.roborock.com/products/roborock-dust-bag-6pcs-for-q-revo"},
       {"label": "Roborock Qrevo mop cloth compatibility", "url": "https://us.roborock.com/products/roborock-mop-cloth-4pcs-for-q-revo"},
       {"label": "Roborock Qrevo main-brush compatibility list", "url": "https://us.roborock.com/products/roborock-qrevo-maxv"},
@@ -65,10 +69,10 @@
     "slug": "roborock-qrevo-plus-replacement-parts",
     "aliases": ["Q Revo Plus"],
     "fit_family": "Standard Qrevo round-mop family",
-    "warning": "Qrevo Plus does not use the Qrevo Curv or Edge brush family. Match the full model name before ordering.",
+    "warning": "Use the later Qrevo Filter-E family—not original Q Revo Filter-B. Qrevo Plus does not use the Curv or Edge DuoDivide brush family.",
     "parts": [
       {"type": "Dust bags", "fit": "Qrevo-series dock dust bags; confirm Qrevo Plus in the current listing.", "query": "Roborock Qrevo Plus dust bags"},
-      {"type": "Washable filters", "fit": "Qrevo Plus washable-filter family explicitly listed by Roborock.", "query": "Roborock Qrevo Plus washable filters"},
+      {"type": "Washable filters", "fit": "Later Qrevo Filter-E family explicitly listed for Qrevo Plus. Original Q Revo Filter-B does not fit.", "query": "Roborock Qrevo Plus Filter E washable filters"},
       {"type": "Mop cloths", "fit": "Round spinning mop cloths listed by Roborock for Qrevo Plus.", "query": "Roborock Qrevo Plus mop cloth replacement"},
       {"type": "Main brush", "fit": "Standard all-rubber Qrevo main brush; the official list includes Qrevo Plus.", "query": "Roborock Qrevo Plus main brush replacement"}
     ],
