@@ -3,6 +3,8 @@
 更新日期：2026-07-17  
 获客默认 **零付费**（见 [`08-ops-roadmap.md`](08-ops-roadmap.md)）。页内 CTA 一律导向：**主推商品盒（Check price on Amazon）** + 可选约束问卷；不单堆无上下文商品链，也不再「只导问卷」。
 
+> **2026-09-14：本文件转为历史归档。** 厨房排水、空气、硬地页保留但停止扩写。当前 SEO 单元是 `品牌 + 完整型号 + replacement part`；权威矩阵见 `site/assets/robot-compatibility.json`，验证门闩见 `08-ops-roadmap.md` 文首。
+
 ---
 
 ## 1. ③ SEO / 问答选题地图

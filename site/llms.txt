@@ -1,47 +1,36 @@
 # US Scene Buy — llms.txt
-# GEO helper: concise map for answer engines / assistants.
-# Site: scene decision help + Amazon Associate links. Not medical/plumbing certification.
+# Site: exact-model shopping compatibility + Amazon Associate links.
 
 > https://van0710-source.github.io/us-scene-buy/
 
 ## Primary
-- [Home](https://van0710-source.github.io/us-scene-buy/): Match one next step for clogged, slow, or smelly kitchen sinks; buying nothing is allowed.
-- [Decision quiz](https://van0710-source.github.io/us-scene-buy/quiz.html): ≤5 questions → one primary pick (physical / enzyme / gel / call pro / wait) with Amazon check-price links.
-- [Guides by symptom](https://van0710-source.github.io/us-scene-buy/guides/): Urgent, slow/smelly, and compatibility paths.
-- [How recommendations are made](https://van0710-source.github.io/us-scene-buy/about.html): Constraints, evidence labels, and no-buy boundaries.
+- [Home](https://van0710-source.github.io/us-scene-buy/): One-field Roborock / Dreame model selector.
+- [Robot replacement parts by model](https://van0710-source.github.io/us-scene-buy/robots/): Dust bags, filters, mop pads, and brushes matched from manufacturer compatibility sources.
+- [How compatibility is verified](https://van0710-source.github.io/us-scene-buy/about.html): Full model names, visible sources, explicit mix-up warnings, and no first-hand-testing claims.
 
-## High-intent kitchen drain guides (product boxes on page)
-- [Won't drain](https://van0710-source.github.io/us-scene-buy/guides/clogged-kitchen-sink.html)
-- [No chemicals first](https://van0710-source.github.io/us-scene-buy/guides/unclog-kitchen-sink-no-chemicals.html)
-- [Slow after cooking / grease](https://van0710-source.github.io/us-scene-buy/guides/slow-kitchen-drain-grease.html)
-- [Enzyme shortlist](https://van0710-source.github.io/us-scene-buy/guides/best-enzyme-drain-cleaner-kitchen.html)
-- [Enzyme vs chemical gel](https://van0710-source.github.io/us-scene-buy/guides/enzyme-vs-chemical-drain-cleaner.html)
-- [Already used a chemical](https://van0710-source.github.io/us-scene-buy/guides/used-drain-cleaner-still-clogged.html)
-- [Old / cast iron pipes](https://van0710-source.github.io/us-scene-buy/guides/old-pipes-kitchen-drain.html)
-- [Sewer vs septic](https://van0710-source.github.io/us-scene-buy/guides/sewer-vs-septic-drain-cleaner.html)
-- [Septic-safe](https://van0710-source.github.io/us-scene-buy/guides/septic-safe-kitchen-drain.html)
-- [Apartment / rental](https://van0710-source.github.io/us-scene-buy/guides/apartment-kitchen-drain.html)
-- [Smell, still drains](https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-smell.html)
-- [Disposal odor](https://van0710-source.github.io/us-scene-buy/guides/kitchen-disposal-smell.html)
-- [When to call a plumber](https://van0710-source.github.io/us-scene-buy/guides/when-to-call-plumber-kitchen-sink.html)
-- [Prevent grease clogs](https://van0710-source.github.io/us-scene-buy/guides/prevent-grease-clog.html)
-- [Smells when dishwasher runs](https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-smells-when-dishwasher-runs.html)
-- [Drain cleaner and PVC pipes](https://van0710-source.github.io/us-scene-buy/guides/drain-cleaner-safe-for-pvc-pipes.html)
-- [Black sludge in kitchen drain](https://van0710-source.github.io/us-scene-buy/guides/black-sludge-kitchen-sink-drain.html)
-- [Baking soda myth-check](https://van0710-source.github.io/us-scene-buy/guides/baking-soda-vinegar-kitchen-drain.html)
-- [Cleaner + disposal](https://van0710-source.github.io/us-scene-buy/guides/drain-cleaner-with-garbage-disposal.html)
-- [After dishwashing clog](https://van0710-source.github.io/us-scene-buy/guides/kitchen-sink-clogged-dishwashing.html)
+## First verified robot models
+- [Roborock Qrevo Pro](https://van0710-source.github.io/us-scene-buy/robots/roborock-qrevo-pro-replacement-parts.html): Standard Qrevo round-mop family; includes an explicit near-model warning.
+- [Roborock Qrevo MaxV](https://van0710-source.github.io/us-scene-buy/robots/roborock-qrevo-maxv-replacement-parts.html): Standard Qrevo round-mop family; includes an explicit near-model warning.
+- [Roborock Qrevo S](https://van0710-source.github.io/us-scene-buy/robots/roborock-qrevo-s-replacement-parts.html): Standard Qrevo round-mop family; includes an explicit near-model warning.
+- [Roborock Qrevo Plus](https://van0710-source.github.io/us-scene-buy/robots/roborock-qrevo-plus-replacement-parts.html): Standard Qrevo round-mop family; includes an explicit near-model warning.
+- [Dreame L10s Ultra](https://van0710-source.github.io/us-scene-buy/robots/dreame-l10s-ultra-replacement-parts.html): Original L10s Ultra accessory family; includes an explicit near-model warning.
+- [Dreame L20 Ultra](https://van0710-source.github.io/us-scene-buy/robots/dreame-l20-ultra-replacement-parts.html): L20 Ultra accessory family; includes an explicit near-model warning.
+- [Dreame X30 Ultra](https://van0710-source.github.io/us-scene-buy/robots/dreame-x30-ultra-replacement-parts.html): X30 / selected later L-series accessory family; includes an explicit near-model warning.
+- [Dreame X40 Ultra](https://van0710-source.github.io/us-scene-buy/robots/dreame-x40-ultra-replacement-parts.html): X40 Ultra / original L40 Ultra accessory family; includes an explicit near-model warning.
+- [Dreame L40 Ultra](https://van0710-source.github.io/us-scene-buy/robots/dreame-l40-ultra-replacement-parts.html): X40 Ultra / original L40 Ultra accessory family; includes an explicit near-model warning.
+- [Dreame L10s Ultra Gen 2](https://van0710-source.github.io/us-scene-buy/robots/dreame-l10s-ultra-gen-2-replacement-parts.html): X30 / selected later L-series accessory family; includes an explicit near-model warning.
 
-## Conversion probes (other scenes)
-- [Air purifier by room size](https://van0710-source.github.io/us-scene-buy/guides/air-purifier-room-size.html): CADR / coverage match; not medical advice.
-- [Hard floor cleaner pick](https://van0710-source.github.io/us-scene-buy/guides/hard-floor-cleaner-pick.html): tile / LVP / hardwood constraint → cleaner or wet vac.
+## Archived experiment
+- [Kitchen-drain guide archive](https://van0710-source.github.io/us-scene-buy/guides/): Existing drain pages remain available but are not the current expansion path.
+- [Legacy kitchen-drain selector](https://van0710-source.github.io/us-scene-buy/quiz.html): Archived five-question browser-only tool.
 
-## Rules we state on-site
-- Never mix drain chemicals; follow the product label.
-- Do not promise guaranteed clear times or “never clogs again.”
-- Guides show a primary pick + Amazon “Check price” CTA; quiz is optional refine.
-- Affiliate disclosure: Amazon Associates; prices/stock change at checkout.
+## Rules stated on-site
+- Keep every model suffix, including Pro, MaxV, Plus, Ultra, and Gen 2.
+- Manufacturer pages support fit notes; Amazon links are current shopping options, not source evidence.
+- Re-check the exact model in the current Amazon listing before ordering.
+- No batteries, internal repairs, safety-critical modifications, copied reviews, or manually published live prices.
+- Affiliate disclosure: As an Amazon Associate, we earn from qualifying purchases.
 
-## Sitemap
+## Discovery
 - https://van0710-source.github.io/us-scene-buy/sitemap.xml
 - https://van0710-source.github.io/us-scene-buy/feed.xml

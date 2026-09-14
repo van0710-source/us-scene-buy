@@ -13,12 +13,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check robot matrix and generated pages
+        run: |
+          python3 scripts/generate-robot-pages.py
+          git diff --exit-code -- site/index.html site/robots site/sitemap.xml site/feed.xml site/llms.txt
       - name: Check crawl, disclosure, and local links
         run: python3 scripts/site-audit.py
       - name: Check live entry points
         run: |
           curl --fail --silent --show-error --retry 3 \
             https://van0710-source.github.io/us-scene-buy/ >/dev/null
+          curl --fail --silent --show-error --retry 3 \
+            https://van0710-source.github.io/us-scene-buy/robots/ >/dev/null
+          curl --fail --silent --show-error --retry 3 \
+            https://van0710-source.github.io/us-scene-buy/robots/dreame-l40-ultra-replacement-parts.html >/dev/null
           curl --fail --silent --show-error --retry 3 \
             https://van0710-source.github.io/us-scene-buy/guides/ >/dev/null
           curl --fail --silent --show-error --retry 3 \

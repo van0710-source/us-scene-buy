@@ -7,12 +7,12 @@
 
 ## 摘要
 
-US Scene Buy：美国纯联盟厨房排水站。  
+US Scene Buy：美国纯联盟扫地机器人耗材兼容站（2026-09-14 从厨房排水改刀）。
 https://van0710-source.github.io/us-scene-buy/  
 Associates `usscenebuy-20`；税 Validated / 0%；Direct Deposit。无收入不投放。  
 **社媒：本阶段不起号**（除非本仓 Agent 可自动发帖且书面改口令）。默认 SEO；GEO 按需。
 
-角色：决策**末段**短推一把（主推盒 + Check price）；问卷是加深路径，不是唯一出站口。
+角色：购买末段的**精确型号兼容确认**。完整型号 → 厂商来源支持的耗材家族 → 相近型号错配警告 → Amazon 当前选项。
 
 ## 获客边界（锁定）
 
@@ -21,14 +21,13 @@ Associates `usscenebuy-20`；税 Validated / 0%；Direct Deposit。无收入不�
 - 子号草案 `docs/10` = **停泊**。  
 - **禁止**：伪造访问、自点/亲友点联盟链、刷单、「24h 加购保归因」文案、无收入付费投放。
 
-## 已完成（2026-08-17 · main 已部署）
+## 已完成（2026-09-14 · 改刀待部署）
 
-- 指南首屏商品盒 + 对照表（含原先无 CTA 的 8 页）+ 首页主推盒  
-- 长尾探针：PVC / 洗碗机异味 / 黑色污泥；Drano 后仍堵、洗碗机后堵塞已改写  
-- `guides/` hub、about、privacy、Atom feed、favicon、本地 `site.js`（仅 localStorage）  
-- FAQ JSON-LD（money pages）、sitemap `lastmod`、IndexNow（部署后自动）  
-- GitHub 描述/topics/homepage、Release `v0.2.0`、周检 workflow `growth-health.yml`  
-- 探针仅排水 + 空气房间匹配 + 硬地材质；未扩第三套完整站
+- 10 个 Roborock / Dreame 型号兼容矩阵：`site/assets/robot-compatibility.json`
+- 单字段型号选择器 + 10 个静态型号页；逐件 Amazon 入口、厂商来源、错配警告
+- 首页主线改 Robot parts；旧 `guides/` 与 `quiz.html` 保留 archive
+- sitemap / feed / llms.txt 由 `scripts/generate-robot-pages.py` 生成
+- Umami + Amazon tag + IndexNow + 合规审计基础设施继续复用
 
 ## 增长报告邮箱（已确认）
 
@@ -36,23 +35,25 @@ Associates `usscenebuy-20`；税 Validated / 0%；Direct Deposit。无收入不�
 - **不用** `van.paddle335@gmail.com`（Maya Layer1）  
 - 触发：GSC 展示从 0→有、Associates Clicks/Orders 从 0→有，或日环比明显上升 → 短邮件报告
 
-## 5 日口径（启动日 2026-08-17）
+## 6～8 周验证口径（启动日以公开部署为准）
 
-- **可控**：≥10 次真实站点访问（排除本人/亲友任务/爬虫）  
-- **争取**：首批 Associates Clicks；Orders 不能合规保证  
-- 零付费冷启动常见数周～数月；报表为 0 ≠ 定位错
+- GSC：多个精确型号页获得相关 query 展示 / 点击
+- Umami：型号选择与 Amazon outbound 事件
+- Associates：Clicks / Orders；订单只作真实结果，不合规保证
+- 有足够真实访问时，Amazon 出站 CTR 约 ≥12% 才继续扩型
+- 禁止本人、亲友、激励购买或自点制造 180 天内 3 单
 
 ## 用户一次性（可选加速，Agent 不能代登录）
 
-1. GSC URL 检查 → 对 enzyme / clogged / guides hub 等 money page「请求编入索引」  
+1. GSC URL 检查 → 对 `/robots/` 和 2～3 个代表型号页「请求编入索引」
 2. Bing Webmaster → 从 GSC 导入 + 提交 sitemap
 
 ## 本次请继续
 
-1. 盯 GSC 展示/索引 + Associates Clicks / Orders；有访问无点击再改文案  
+1. 部署并完成公开页发布后 QA；确认 selector、型号页、厂商来源、Amazon tag、sitemap 均在线
 2. 有增长数据 → 邮件 `van0710@gmail.com`  
-3. 维持合规有机路径：加厚高意图页 / 内链 / IndexNow；勿开社媒；勿堆薄页换流量  
-4. 探针不扩第三套完整站，除非探针出现稳定 Clicks  
+3. 按周盯 GSC 精确型号词 + Umami + Associates Clicks / Orders
+4. 6～8 周门闩前不扩第三品牌、第二大品类、电池或内部维修；旧排水/空气/硬地停止扩写
 
 工作语言：中文。
 

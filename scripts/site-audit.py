@@ -88,8 +88,8 @@ def main() -> int:
         rel = page.relative_to(SITE).as_posix()
         if rel == "index.html":
             url = base
-        elif rel == "guides/index.html":
-            url = base + "guides/"
+        elif rel.endswith("/index.html"):
+            url = base + rel[: -len("index.html")]
         else:
             url = base + rel
         if url not in urls:

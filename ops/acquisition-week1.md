@@ -1,6 +1,14 @@
 # 获客运营（Agent 自主路径）
 
-更新日期：2026-08-17
+更新日期：2026-09-14
+
+## 2026-09-14 改刀
+
+- 当前主线：扫地机器人精确型号耗材兼容；旧厨房排水内容降为 archive。
+- 首轮入口：10 个 Roborock / Dreame 型号页 + 单字段型号选择器。
+- 无真人访谈门闩：改看 GSC 精确型号词、Umami 型号页/出站事件、Associates Clicks/Orders。
+- 每周记录；6～8 周后判断。多个型号页有搜索信号，且有足够真实访问时 Amazon 出站 CTR 约 ≥12% 才扩。
+- 停止扩排水、空气、硬地；首轮未过门闩前不增第三品牌或电池/维修内容。
 
 ## 边界（已锁定）
 
@@ -13,18 +21,22 @@
 
 Reddit / 导购子号：**本阶段不起号**。开号仅当本仓 Agent 具备自动发帖（含审批）且书面改口令。默认 SEO；GEO 见 `site/llms.txt` 与页内 FAQ schema。草案停泊：[`docs/10-social-subaccount-persona.md`](../docs/10-social-subaccount-persona.md)。
 
-## 转化定位（2026-07-29 改口令）
+## 转化定位（2026-09-14 改口令）
 
-- 角色：决策**末段**短推一把（主推 1 + Check price），不是深度评测站。
-- 指南页：**首屏可出站**（商品盒 + 对照表）；问卷是加深路径，不是唯一 CTA。
-- 探针：排水主线转化修复 + 空气房间匹配 + 硬地材质匹配（各可独立看 Associates Clicks）。
+- 角色：购买末段的**兼容确认**，不是主观评测站。
+- 页面：完整型号、耗材家族、近似型号错配警告、逐件 Amazon 当前选项。
+- 证据：厂商兼容页是事实来源；Amazon 搜索结果只作购物入口。
+- 禁止：亲测措辞、复制评论、手填实时价格、电池与内部维修。
 
 ## Agent 已接通的获客管道
 
-1. **站内 SEO**：高意图指南 + 问卷深链 + FAQ JSON-LD  
+1. **站内 SEO**：`品牌 + 完整型号 + replacement part` 静态兼容页
 2. **IndexNow**：`scripts/indexnow-submit.sh`；每次 Pages 部署后 CI 自动提交  
 3. **GSC sitemap**：你已提交；后续抓取由 Google 处理  
-4. **联盟转化**：`tag=usscenebuy-20` 已挂在商品链与指南商品盒上  
+   - **2026-08-17**：GSC 邮件确认已开始收集 Search **impressions**（属性 `van0710-source.github.io/us-scene-buy/`）
+   - **2026-08-20**：用户截图确认；下一步看 Performance → Top pages / Top queries（展示≠点击≠订单）
+   - **2026-09-14**：新型号页上线后单独建立 page/query 基线
+4. **联盟转化**：`tag=usscenebuy-20` 已挂在型号页精确 Amazon 搜索入口
 
 站点：https://van0710-source.github.io/us-scene-buy/
 
@@ -45,7 +57,7 @@ Reddit / 导购子号：**本阶段不起号**。开号仅当本仓 Agent 具备
 
 - **可控目标**：5 日内新增至少 10 次真实站点访问；排除本人、亲友任务流量与自动抓取。
 - **争取目标**：Associates 首批 Clicks；Orders 由真实购买决定，不能合规保证数量。
-- **已上线入口**：症状分类 hub + PVC、洗碗机异味、黑色污泥 3 个 Google Suggest 真实长尾；同时重写 “after Drano” 与 “after running dishwasher”。
+- **历史入口**：排水症状 hub + 长尾页均保留，但停止扩写。
 - **公开分发**：GitHub repo 首页/描述/topics、release 页面、Atom feed、IndexNow；不创建社媒号、不群发、不发联盟链接到私域。
 - **持续机制**：每周 CI 检查 sitemap、canonical、披露、内部链接与在线入口；内容有变更时由部署流程提交 IndexNow。
 
@@ -53,7 +65,7 @@ Reddit / 导购子号：**本阶段不起号**。开号仅当本仓 Agent 具备
 
 - 有机流量通常要 **数周～数月** 才稳定。  
 - 「尽快佣金」= **页内可点 Amazon + 被索引 + 真实搜索访问**；无访问时报表为零不证明定位错。
-- 若 5 日真实访问仍为 0，结论是当前零预算公开入口不足，不把机器人/自点包装成增长；下一决策是启用已批准的公开分发账号或独立域名，而不是继续堆薄页。
+- 若型号页 6～8 周仍无可辨识精确词信号，结论是当前切口/域名无法获得自然注意力；不把爬虫、自点或堆薄页包装成增长。
 
 ## 短链
 

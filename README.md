@@ -1,21 +1,23 @@
 # US Scene Buy
 
-美国市场、纯联盟模式的 **场景利益点购物决策助手**（细分垂直起步）。
+美国市场、纯联盟模式的 **精确型号耗材兼容助手**（细分垂直起步）。
 
 **Live site:** https://van0710-source.github.io/us-scene-buy/
 
 Current public tools:
-- [Kitchen drain decision quiz](https://van0710-source.github.io/us-scene-buy/quiz.html)
-- [Browse guides by symptom](https://van0710-source.github.io/us-scene-buy/guides/)
-- [How recommendations are made](https://van0710-source.github.io/us-scene-buy/about.html)
+- [Robot vacuum parts by exact model](https://van0710-source.github.io/us-scene-buy/robots/)
+- [Kitchen drain guide archive](https://van0710-source.github.io/us-scene-buy/guides/)
+- [How compatibility is verified](https://van0710-source.github.io/us-scene-buy/about.html)
 
 ## 一句话定位
 
-面向细分家居场景：先问清用户约束，再给出「对你意味着什么」的利益点 + 可核对参数锚 + 联盟追踪链接；不经手货款。
+面向已经准备购买替换耗材的美国用户：用完整设备型号匹配尘袋、滤网、拖布和刷件，明确相近型号的错配风险，再给联盟追踪链接；不经手货款。
 
-## 当前 MVP 切口（已定方向）
+## 当前 MVP 切口（2026-09-14 改刀）
 
-**厨房水槽堵塞 / 排水异味（急用获客）→ 养护与耗材（复购）→ 清洁/厨余相关设备（重决策，后置）**
+**扫地机器人完整型号 → 可核验耗材兼容 → Amazon 当前选项**
+
+首批 10 个 Roborock / Dreame 型号；厨房排水、空气和硬地页面保留为历史探针，但停止扩写。
 
 ## 文档索引
 
@@ -31,7 +33,9 @@ Current public tools:
 | [docs/07-mvp-kitchen-drain.md](docs/07-mvp-kitchen-drain.md) | MVP：厨房堵塞/异味问卷·输出·拒答·SKU |
 | [docs/08-ops-roadmap.md](docs/08-ops-roadmap.md) | **操作总图**：阶段、联盟、软硬测、瓶颈 |
 | [docs/09-seo-maintenance.md](docs/09-seo-maintenance.md) | P1：SEO 选题地图 + ③→① 养护路径 |
-| [site/](site/) | **厨房排水垂直小站**（申联盟 / SEO） |
+| [site/](site/) | **扫地机器人耗材兼容站**（旧排水内容保留归档） |
+| [site/assets/robot-compatibility.json](site/assets/robot-compatibility.json) | 首批 10 型号兼容矩阵与权威来源 |
+| [scripts/generate-robot-pages.py](scripts/generate-robot-pages.py) | 从矩阵生成首页、型号页与发现文件 |
 | [prototype/kitchen-drain.html](prototype/kitchen-drain.html) | 早期单页原型（已由 `site/quiz.html` 承接） |
 | [CONTINUE_PROMPT.md](CONTINUE_PROMPT.md) | **新对话续聊提示词（复制即用）** |
 | [AGENTS.md](AGENTS.md) | Agent 工作约定 |

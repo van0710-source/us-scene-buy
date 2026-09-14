@@ -1,6 +1,6 @@
-# Kitchen drain mini-site
+# Robot-vacuum replacement-parts compatibility site
 
-Static site for Amazon Associates + organic SEO. **Single vertical** (kitchen drain) with a few conversion probes.
+Static site for Amazon Associates + organic SEO. Current vertical: exact-model Roborock / Dreame replacement consumables. The earlier kitchen-drain experiment remains archived.
 
 Live: https://van0710-source.github.io/us-scene-buy/
 
@@ -8,12 +8,21 @@ Live: https://van0710-source.github.io/us-scene-buy/
 
 | Path | Role |
 |------|------|
-| `index.html` | Home + symptom grid |
-| `quiz.html` | Constraint quiz → one primary pick |
-| `guides/index.html` | Guides hub by symptom |
-| `guides/*.html` | High-intent SEO + contextual Amazon CTAs |
+| `index.html` | Home + one-field robot-model selector |
+| `robots/index.html` | Verified model hub |
+| `robots/*.html` | Manufacturer-source-backed model fit pages + Amazon CTAs |
+| `assets/robot-compatibility.json` | Source matrix for generated pages |
+| `quiz.html` | Archived kitchen-drain selector |
+| `guides/` | Archived drain / air / floor experiments |
 
-Product links use Associates tag **`usscenebuy-20`**. Every commercial page includes affiliate disclosure + safety copy.
+Product links use Associates tag **`usscenebuy-20`**. Every page includes the required disclosure; robot pages separate manufacturer fit evidence from Amazon shopping results.
+
+Regenerate after editing the compatibility matrix:
+
+```bash
+cd /path/to/us-scene-buy
+python3 scripts/generate-robot-pages.py
+```
 
 ## Local preview
 
