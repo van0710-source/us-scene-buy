@@ -14,7 +14,7 @@
 | Associates + 税 + Direct Deposit | 完成（0% 预提） |
 | GSC 验证 + sitemap | 完成（用户一次操作） |
 | GSC impressions | 旧站基线：2026-08-17～26 共 2 展示 / 0 点击；改刀后重新按型号页建基线 |
-| 当前有机获客 | **扫地机器人兼容第一轮**：10 型号页 + 单字段选择器 |
+| 当前有机获客 | **扫地机器人兼容第一轮已上线**：10 型号页 + 单字段选择器（commit `017fd86`） |
 | 转化形态 | **完整型号 → 厂商来源兼容说明 → Amazon 精确搜索入口** |
 | 社媒导购子号 | **停泊 · 不起号**（除非 Agent 可自动发帖且书面改口令）；草案 `10` |
 | GEO | **按需**：`llms.txt` 映射；不替代精确型号 SEO，不开号前置 |
@@ -26,7 +26,7 @@
 - [x] 生成单字段选择器 + 10 型号静态页：`scripts/generate-robot-pages.py`
 - [x] 兼容页逐件 Amazon 入口 + 厂商来源 + 相近型号警告
 - [x] 首页主入口改为 Robot parts；排水降为 archive
-- [ ] 部署后核公开 URL、sitemap、资源与选择器
+- [x] GitHub Pages 部署、IndexNow、公开 URL / sitemap / 静态资源 / 选择器检查通过（2026-09-14）
 - [ ] 按 `ops/robot-pivot-scorecard.md` 每周记 GSC 精确型号词、Umami 型号选择/出站、Associates Clicks/Orders
 - [ ] 6～8 周门闩：多页有精确词信号；有足够真实访问时出站 CTR 约 ≥12%
 

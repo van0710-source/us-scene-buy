@@ -21,13 +21,14 @@ Associates `usscenebuy-20`；税 Validated / 0%；Direct Deposit。无收入不�
 - 子号草案 `docs/10` = **停泊**。  
 - **禁止**：伪造访问、自点/亲友点联盟链、刷单、「24h 加购保归因」文案、无收入付费投放。
 
-## 已完成（2026-09-14 · 改刀待部署）
+## 已完成（2026-09-14 · 改刀已部署）
 
 - 10 个 Roborock / Dreame 型号兼容矩阵：`site/assets/robot-compatibility.json`
 - 单字段型号选择器 + 10 个静态型号页；逐件 Amazon 入口、厂商来源、错配警告
 - 首页主线改 Robot parts；旧 `guides/` 与 `quiz.html` 保留 archive
 - sitemap / feed / llms.txt 由 `scripts/generate-robot-pages.py` 生成
 - Umami + Amazon tag + IndexNow + 合规审计基础设施继续复用
+- GitHub Pages + IndexNow 成功；公开首页、型号 hub、代表型号页、资源与 sitemap 均 200（commit `017fd86`）
 
 ## 增长报告邮箱（已确认）
 
@@ -50,7 +51,7 @@ Associates `usscenebuy-20`；税 Validated / 0%；Direct Deposit。无收入不�
 
 ## 本次请继续
 
-1. 部署并完成公开页发布后 QA；确认 selector、型号页、厂商来源、Amazon tag、sitemap 均在线
+1. W1：确认 GSC 已发现 `/robots/` 和代表型号页；把首周数据写入 `ops/robot-pivot-scorecard.md`
 2. 有增长数据 → 邮件 `van0710@gmail.com`  
 3. 按周盯 GSC 精确型号词 + Umami + Associates Clicks / Orders
 4. 6～8 周门闩前不扩第三品牌、第二大品类、电池或内部维修；旧排水/空气/硬地停止扩写
