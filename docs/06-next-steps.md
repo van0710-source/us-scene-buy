@@ -1,36 +1,34 @@
 # 下一步工作项
 
-更新日期：2026-09-14
+更新日期：2026-11-03
 
 **站点**：https://van0710-source.github.io/us-scene-buy/  
 **跨仓**：[`/Users/apple/Projects/growth`](../../growth/README.md)（Maya / 社媒）；本仓不假设已有导购子号在跑。  
-**子号草案**：[`10-social-subaccount-persona.md`](10-social-subaccount-persona.md)（停泊 · 不起号）
-**当前改刀**：扫地机器人精确型号耗材兼容；旧排水 / 空气 / 硬地页停止扩写。
+**子号草案**：[`10-social-subaccount-persona.md`](10-social-subaccount-persona.md)（停泊 · 不起号）  
+**当前改刀**：扫地机器人精确型号耗材兼容；旧排水 / 空气 / 硬地页停止扩写。  
+**运营执行**：默认 [`ops/agent-ops.md`](../ops/agent-ops.md)（Agent 自主）；用户仅在贴 GSC/Umami/Associates 数字时介入。
 
 ## 阶段
 
 | 阶段 | 状态 |
 |------|------|
-| Associates + 税 + Direct Deposit | 完成（0% 预提） |
-| GSC 验证 + sitemap | 完成（用户一次操作） |
-| GSC impressions | 旧站基线：2026-08-17～26 共 2 展示 / 0 点击；改刀后重新按型号页建基线 |
-| 当前有机获客 | **扫地机器人兼容第一轮已上线**：10 型号页 + 单字段选择器（commit `017fd86`） |
-| 转化形态 | **完整型号 → 厂商来源兼容说明 → Amazon 精确搜索入口** |
-| 社媒导购子号 | **停泊 · 不起号**（除非 Agent 可自动发帖且书面改口令）；草案 `10` |
-| GEO | **按需**：`llms.txt` 映射；不替代精确型号 SEO，不开号前置 |
-| 社区代发 | **不做**（无自动发帖能力前） |
+| Associates + 税 + Direct Deposit | 完成（US Validated / 0%；Canada Incomplete 搁置） |
+| GSC 验证 + sitemap | 完成 |
+| 机器人首轮上线 | 完成（10 型号 + 选择器，`017fd86`） |
+| 6～8 周门闩（Day 50 / W8） | **2026-11-03：停止扩写**（见 `ops/robot-pivot-scorecard.md`） |
+| 社媒 / 投放 / 社区代发 | 不做 |
+| GEO | 按需维护 `llms.txt`；不开号 |
 
-## 第一轮执行（2026-09-14）
+## Agent 持续做
 
-- [x] 建立 10 型号兼容矩阵：`site/assets/robot-compatibility.json`
-- [x] 生成单字段选择器 + 10 型号静态页：`scripts/generate-robot-pages.py`
-- [x] 兼容页逐件 Amazon 入口 + 厂商来源 + 相近型号警告
-- [x] 首页主入口改为 Robot parts；排水降为 archive
-- [x] GitHub Pages 部署、IndexNow、公开 URL / sitemap / 静态资源 / 选择器检查通过（2026-09-14）
-- [ ] 按 `ops/robot-pivot-scorecard.md` 每周记 GSC 精确型号词、Umami 型号选择/出站、Associates Clicks/Orders
-- [ ] 6～8 周门闩：多页有精确词信号；有足够真实访问时出站 CTR 约 ≥12%
+- 周检：`site-audit` + 生成一致性 + IndexNow + 公开检索探测 + 记分卡备注  
+- 保留并维护现有型号页可信度（厂商来源失效时修正警告文案）  
+- **不**扩第三品牌、第二大品类、电池/内部维修、旧排水文库  
+
+## 用户仅在有数据时
+
+把 GSC / Umami / Associates 截图或数字贴进对话 → Agent 填记分卡。若日后出现稳定精确型号词 + 真实出站，再书面改口令讨论是否恢复扩型号。
 
 ## 暂缓
 
-付费投放、Reddit 养号、**导购子号开号**、无审批的社媒代发。  
-旧排水、空气、硬地页不删除但停止扩写。首轮未过门闩前不增第三品牌、第二大品类、机器人电池或内部维修。
+付费投放、Reddit 养号、导购子号开号、无审批社媒代发、为凑 180 天订单的自买/亲友买。

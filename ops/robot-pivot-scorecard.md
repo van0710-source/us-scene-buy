@@ -16,14 +16,14 @@
 
 | 周 | 窗口 | 型号页 GSC 展示 | 型号页 GSC 点击 | Umami 型号页访问 | `robot-model-selected` | `amazon-outbound` | Associates Clicks | Orders | 备注 |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|
-| W1 | Day 0–7 | — | — | — | — | — | — | — | 部署 / 抓取期 |
-| W2 | Day 8–14 | — | — | — | — | — | — | — | |
-| W3 | Day 15–21 | — | — | — | — | — | — | — | |
-| W4 | Day 22–28 | — | — | — | — | — | — | — | |
-| W5 | Day 29–35 | — | — | — | — | — | — | — | |
-| W6 | Day 36–42 | — | — | — | — | — | — | — | 首次门闩 |
-| W7 | Day 43–49 | — | — | — | — | — | — | — | 样本不足时继续 |
-| W8 | Day 50–56 | — | — | — | — | — | — | — | 终门闩 |
+| W1 | Day 0–7 | — | — | — | — | — | — | — | 2026-09-14 GSC：属性正确；`/robots/` + Qrevo Pro / MaxV / L40 Ultra 均已 Request indexing（priority crawl queue） |
+| W2 | Day 8–14 | 0（型号页） | 0 | 0 | 0 | 0 | 0 | 0 | 2026-09-28 周检：GSC 仅首页 2 展示/0 点击（约 8/18）；Queries No data；四页 not on Google，已再 Request indexing。Umami Last 30d/Today 全 0。Associates 9/14–9/28 **no data**（0/0）。税：US Validated；Canada Incomplete 搁置 |
+| W3 | Day 15–21 | — | — | — | — | — | — | — | 未做用户周检（空窗） |
+| W4 | Day 22–28 | — | — | — | — | — | — | — | 未做用户周检（空窗） |
+| W5 | Day 29–35 | — | — | — | — | — | — | — | 未做用户周检（空窗） |
+| W6 | Day 36–42 | — | — | — | — | — | — | — | 首次门闩窗口；无后台数据落盘 |
+| W7 | Day 43–49 | — | — | — | — | — | — | — | 无后台数据落盘 |
+| W8 | Day 50–56 | 未知（无 GSC 授权） | 未知 | 未知 | 未知 | 未知 | 未知 | 未知 | **2026-11-03 Agent 终门闩自检**：site-audit OK；生成页无脏 diff；IndexNow 38 URL → HTTP 200；线上型号页 200。公开检索可见 hub/首页/about，**未见**单型号页对「完整型号 + replacement」商用词占位；上次真人 GSC（W2）型号页仍 not on Google / 0·0。**判定：停止扩写**（保留 10 型号页；不增第三品牌/第二品类/电池维修；继续 IndexNow + 周检，不伪造点击） |
 
 ## 计算
 

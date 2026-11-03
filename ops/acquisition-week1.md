@@ -1,23 +1,23 @@
 # 获客运营（Agent 自主路径）
 
-更新日期：2026-09-14
+更新日期：2026-11-03
 
-## 2026-09-14 改刀
+## 2026-09-14 改刀 · 2026-11-03 门闩
 
 - 当前主线：扫地机器人精确型号耗材兼容；旧厨房排水内容降为 archive。
 - 首轮入口：10 个 Roborock / Dreame 型号页 + 单字段型号选择器。
-- 无真人访谈门闩：改看 GSC 精确型号词、Umami 型号页/出站事件、Associates Clicks/Orders。
-- 每周记录；6～8 周后判断。多个型号页有搜索信号，且有足够真实访问时 Amazon 出站 CTR 约 ≥12% 才扩。
-- 停止扩排水、空气、硬地；首轮未过门闩前不增第三品牌或电池/维修内容。
+- **W8 判定：停止扩写**（保留现页；见 `robot-pivot-scorecard.md`）。
+- 运营默认 Agent 全权周检：见 [`agent-ops.md`](agent-ops.md)。
+- 停止扩排水、空气、硬地；门闩后不增第三品牌或电池/维修，除非书面改口令。
 
 ## 边界（已锁定）
 
 | 谁做 | 做什么 |
 |------|--------|
-| **Agent 自主** | 写指南、改转化、部署 Pages、IndexNow 提交、扩 sitemap/FAQ schema |
+| **Agent 自主** | 周检、写/修兼容页、转化、部署 Pages、IndexNow、sitemap/FAQ、记分卡、门闩判定（见 `agent-ops.md`） |
 | **growth 仓** | Maya 主号人设 / 开号 / 披露红线；us-scene-buy **不是**已定稿社媒子号 |
-| **不要求用户** | Reddit / Quora / 论坛发帖、日常 SEO 后台操作、未批准的子号运营 |
-| **用户仅一次（已完成）** | GSC 验证 + 提交 sitemap（账号必须本人） |
+| **不要求用户日常** | Reddit / 论坛发帖、日常 SEO 后台、子号运营、重复 Request indexing |
+| **用户仅按需** | 贴 GSC / Umami / Associates 数字；或一次性只读授权。GSC 验证 + sitemap **已完成** |
 
 Reddit / 导购子号：**本阶段不起号**。开号仅当本仓 Agent 具备自动发帖（含审批）且书面改口令。默认 SEO；GEO 见 `site/llms.txt` 与页内 FAQ schema。草案停泊：[`docs/10-social-subaccount-persona.md`](../docs/10-social-subaccount-persona.md)。
 
