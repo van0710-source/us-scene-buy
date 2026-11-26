@@ -23,10 +23,27 @@ def amazon_url(query: str) -> str:
     return f"https://www.amazon.com/s?k={quote_plus(query)}&tag={TAG}"
 
 
+def exact_query(item: dict, query: str) -> str:
+    name = f"{item['brand']} {item['model']}"
+    bare = query.replace('"', "").strip()
+    if bare.lower().startswith(name.lower()) and (len(bare) == len(name) or bare[len(name)] == " "):
+        rest = bare[len(name) :].strip()
+        bare = f'"{name}" {rest}'.strip()
+    return bare
+
+
+def recurring(part_type: str) -> bool:
+    text = part_type.lower()
+    return "bag" in text or "filter" in text
+
+
+def part_event(part_type: str) -> str:
+    return part_type.lower().replace(" ", "-")
+
+
 def header(prefix: str, current: str = "") -> str:
     attrs = {
         "models": ' aria-current="page"' if current == "models" else "",
-        "archive": ' aria-current="page"' if current == "archive" else "",
         "about": ' aria-current="page"' if current == "about" else "",
     }
     return f"""  <header class="site-header">
@@ -34,7 +51,6 @@ def header(prefix: str, current: str = "") -> str:
       <a class="logo" href="{prefix}index.html">US Scene Buy</a>
       <nav class="nav" aria-label="Primary">
         <a href="{prefix}robots/"{attrs["models"]}>Robot parts</a>
-        <a href="{prefix}guides/"{attrs["archive"]}>Drain archive</a>
         <a href="{prefix}about.html"{attrs["about"]}>How we verify</a>
       </nav>
     </div>
@@ -65,7 +81,7 @@ def selector(models: list[dict], prefix: str = "") -> str:
           </select>
           <button class="primary" type="submit">See compatible parts</button>
         </div>
-        <p class="hint">One field, no account. Similar model names can use different bags, filters, mops, or brushes.</p>
+        <p class="hint">One field, no account. If your model is not listed, match the full name on the machine label to the manufacturer’s accessory page before you order.</p>
       </form>"""
 
 
@@ -92,25 +108,19 @@ def render_home(models: list[dict]) -> str:
 {header("")}
   <main class="wrap wide">
     <section class="hero-home">
-      <p class="brand-hero">US Scene Buy</p>
+      <p class="eyebrow">Exact-model fit check</p>
       <h1>The right replacement part starts with the exact robot model.</h1>
       <p class="lede">Match Roborock and Dreame dust bags, filters, mop pads, and brushes without guessing from a look-alike listing.</p>
-      <div class="actions">
-        <a class="btn primary" href="robots/">Find my robot model</a>
-        <a class="btn ghost" href="about.html">See how fit is verified</a>
-      </div>
-    </section>
-
-    <section class="panel" aria-label="Robot model selector">
-      <p class="step-label">One-field fit check</p>
-      <h2>Choose the full model name</h2>
+      <div class="panel" aria-label="Robot model selector">
 {selector(models, "robots/")}
+        <p class="hint"><a href="about.html">See how fit is verified</a></p>
+      </div>
     </section>
 
     <section>
       <p class="step-label">Why exact fit matters</p>
       <div class="guide-grid">
-        <div class="guide-card"><h3>Names can be one word apart</h3><p>Qrevo MaxV and S8 MaxV Ultra are different accessory families.</p></div>
+        <div class="guide-card"><h3>Names can be one word apart</h3><p>Qrevo MaxV and S8 MaxV Ultra can share a dust-bag title and still need different main brushes.</p></div>
         <div class="guide-card"><h3>Looks are not a fit test</h3><p>Dock bags, filter frames, mop mounts, and brushes can look nearly identical.</p></div>
         <div class="guide-card"><h3>Sources stay visible</h3><p>Every model page links the manufacturer compatibility pages used for the match.</p></div>
       </div>
@@ -120,14 +130,7 @@ def render_home(models: list[dict]) -> str:
       <p class="pick-eyebrow">Start with verified families</p>
       <h2>10 Roborock and Dreame models</h2>
       <p class="pick-why">The first set covers recurring bags and filters plus model-specific mop and brush families. We expand only after exact-model pages earn real search and Amazon clicks.</p>
-      <p class="actions"><a class="btn primary" href="robots/">Browse all 10 models</a></p>
-    </section>
-
-    <section>
-      <p class="step-label">Archived experiment</p>
-      <h2>Kitchen-drain guides remain available</h2>
-      <p>The earlier drain library is preserved for existing links and search history, but it is no longer the site’s main product or expansion path.</p>
-      <p class="actions"><a class="btn ghost" href="guides/">Open the drain archive</a></p>
+      <p class="actions"><a class="btn ghost" href="robots/">Browse all 10 models</a></p>
     </section>
   </main>
 {footer("")}
@@ -210,26 +213,36 @@ def render_index(models: list[dict]) -> str:
 
 def render_model(item: dict) -> str:
     name = f"{item['brand']} {item['model']}"
-    aliases = ", ".join(item["aliases"])
-    rows = "\n".join(
-        f"""          <tr>
-            <td><strong>{esc(part["type"])}</strong></td>
-            <td>{esc(part["fit"])}</td>
-            <td><a href="{esc(amazon_url(part["query"]))}" target="_blank" rel="noopener noreferrer sponsored" data-umami-event="amazon-outbound" data-umami-event-model="{esc(item["slug"])}" data-umami-event-part="{esc(part["type"].lower().replace(" ", "-"))}">Check current options on Amazon</a></td>
-          </tr>"""
-        for part in item["parts"]
-    )
+    notes = "\n".join(f"    <p>{esc(note)}</p>" for note in item["notes"])
+    rows = []
+    bag = next(part for part in item["parts"] if "bag" in part["type"].lower())
+    filt = next(part for part in item["parts"] if "filter" in part["type"].lower())
+    for part in item["parts"]:
+        klass = "btn primary" if recurring(part["type"]) else "btn ghost"
+        href = amazon_url(exact_query(item, part["query"]))
+        rows.append(
+            f"""        <li class="part-row">
+          <div>
+            <h3>{esc(part["type"])}</h3>
+            <p>{esc(part["fit"])}</p>
+          </div>
+          <a class="{klass}" href="{esc(href)}" target="_blank" rel="noopener noreferrer sponsored" data-umami-event="amazon-outbound" data-umami-event-model="{esc(item["slug"])}" data-umami-event-part="{esc(part_event(part["type"]))}">Check {esc(part["type"].lower())} on Amazon</a>
+        </li>"""
+        )
     sources = "\n".join(
         f'        <li><a href="{esc(source["url"])}" target="_blank" rel="noopener noreferrer">{esc(source["label"])}</a></li>'
         for source in item["sources"]
     )
+    bag_href = amazon_url(exact_query(item, bag["query"]))
+    filter_href = amazon_url(exact_query(item, filt["query"]))
+    kit_href = amazon_url(exact_query(item, f"{name} replacement accessory kit"))
     schema = json.dumps(
         {
             "@context": "https://schema.org",
             "@type": "TechArticle",
             "headline": f"{name} replacement-parts compatibility",
-            "description": f"Manufacturer-source-backed fit notes for {name} dust bags, filters, mop pads, and brushes.",
-            "dateModified": "2026-09-14",
+            "description": item["deck"],
+            "dateModified": "2026-11-26",
             "mainEntityOfPage": f"{BASE}robots/{item['slug']}.html",
             "author": {"@type": "Organization", "name": "US Scene Buy"},
         },
@@ -241,7 +254,7 @@ def render_model(item: dict) -> str:
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{esc(name)} replacement parts compatibility</title>
-  <meta name="description" content="Which dust bags, filters, mop pads, and brushes fit the {esc(name)}? Check manufacturer-backed compatibility before buying." />
+  <meta name="description" content="{esc(item["deck"])}" />
   <link rel="canonical" href="{BASE}robots/{esc(item["slug"])}.html" />
   <link rel="alternate" type="application/atom+xml" title="US Scene Buy updates" href="../feed.xml" />
   <script type="application/ld+json">{schema}</script>
@@ -254,44 +267,39 @@ def render_model(item: dict) -> str:
 <body>
 {header("../", "models")}
   <main class="wrap article">
-    <p class="eyebrow">{esc(item["brand"])} · exact-model fit</p>
+    <p class="eyebrow">{esc(item["brand"])} · {esc(item["fit_family"])}</p>
     <h1>Compatible replacement parts for {esc(name)}</h1>
-    <p class="deck">Use the full model name—not the shape of the part. This page maps the <strong>{esc(item["fit_family"])}</strong> using the manufacturer sources below.</p>
+    <p class="deck">{esc(item["deck"])}</p>
     <p class="hint"><strong>Affiliate disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases.</p>
 
     <div class="callout"><strong>Easy mix-up:</strong> {esc(item["warning"])}</div>
 
-    <h2>Match the label first</h2>
-    <ol>
-      <li>Confirm the machine or app says <strong>{esc(name)}</strong>{f" (also written {esc(aliases)})" if aliases else ""}.</li>
-      <li>Keep every suffix in the name. “Pro,” “MaxV,” “Plus,” and “Gen 2” can change the fit.</li>
-      <li>On Amazon, open the current listing and confirm that it names this exact model before ordering.</li>
-    </ol>
+    <h2>What changes the fit on the {esc(name)}</h2>
+{notes}
 
-    <h2>Compatible consumable lanes</h2>
-    <div class="compare-wrap">
-      <table class="compare">
-        <thead><tr><th>Part</th><th>Fit note</th><th>Current Amazon options</th></tr></thead>
-        <tbody>
-{rows}
-        </tbody>
-      </table>
-    </div>
-    <p class="hint">Amazon results, sellers, stock, and model lists can change. The links above search the exact model and part; they are not a claim that every result fits.</p>
+    <h2>Parts to match before you order</h2>
+    <ul class="part-list">
+{chr(10).join(rows)}
+    </ul>
+    <p class="hint">Amazon results, sellers, stock, and model lists can change. Each button searches the exact model and part; a search result is not evidence that every listing fits.</p>
 
-    <section class="pick-box" aria-label="Practical starting bundle">
-      <p class="pick-eyebrow">Practical starting bundle</p>
-      <h2>Replace only what is due</h2>
-      <p class="pick-why">Dust bags and filters are the recurring lane. Add mop pads or brushes only when the app/manual indicates replacement or the part is worn. A larger bundle is not automatically the better buy.</p>
-      <p class="actions"><a class="btn primary" href="{esc(amazon_url(name + " replacement accessory kit"))}" target="_blank" rel="noopener noreferrer sponsored" data-umami-event="amazon-outbound" data-umami-event-model="{esc(item["slug"])}" data-umami-event-part="kit">Check current kits on Amazon</a></p>
+    <section class="pick-box" aria-label="Recurring parts">
+      <p class="pick-eyebrow">Replace only what is due</p>
+      <h2>Start with the bag or the filter</h2>
+      <p class="pick-why">Dust bags and filters are the recurring lane for the {esc(name)}. Add mop pads or brushes when that part is worn. A larger kit is not automatically the better buy.</p>
+      <p class="actions">
+        <a class="btn primary" href="{esc(bag_href)}" target="_blank" rel="noopener noreferrer sponsored" data-umami-event="amazon-outbound" data-umami-event-model="{esc(item["slug"])}" data-umami-event-part="{esc(part_event(bag["type"]))}">Check {esc(bag["type"].lower())} on Amazon</a>
+        <a class="btn ghost" href="{esc(filter_href)}" target="_blank" rel="noopener noreferrer sponsored" data-umami-event="amazon-outbound" data-umami-event-model="{esc(item["slug"])}" data-umami-event-part="{esc(part_event(filt["type"]))}">Check {esc(filt["type"].lower())} on Amazon</a>
+      </p>
+      <p class="hint"><a href="{esc(kit_href)}" target="_blank" rel="noopener noreferrer sponsored" data-umami-event="amazon-outbound" data-umami-event-model="{esc(item["slug"])}" data-umami-event-part="kit">Search current {esc(name)} kits on Amazon</a></p>
     </section>
 
     <h2>Sources used for this fit check</h2>
     <ul>
 {sources}
     </ul>
-    <p class="hint">Source review: September 14, 2026. Manufacturer pages remain the fit authority; Amazon search results are shopping options, not source evidence.</p>
-    <p><a href="index.html">Choose another robot model</a> · <a href="../guides/">Browse the archived kitchen-drain guides</a></p>
+    <p class="hint">Source review: November 26, 2026. Manufacturer pages remain the fit authority; Amazon search results are shopping options, not source evidence.</p>
+    <p><a href="index.html">Choose another robot model</a></p>
   </main>
 {footer("../")}
   <script src="../assets/site.js" defer></script>
@@ -309,36 +317,35 @@ def public_url(page: Path) -> str:
     return BASE + rel
 
 
+def indexed(page: Path) -> bool:
+    rel = page.relative_to(ROOT / "site").as_posix()
+    if rel == "quiz.html" or rel.startswith("guides/"):
+        return False
+    text = page.read_text(encoding="utf-8").lower()
+    return 'name="robots"' not in text or "noindex" not in text
+
+
 def render_sitemap() -> str:
     pages = sorted(
         page
         for page in (ROOT / "site").rglob("*.html")
-        if not page.name.startswith("google")
+        if not page.name.startswith("google") and indexed(page)
     )
     rows = []
     for page in pages:
         rel = page.relative_to(ROOT / "site").as_posix()
-        is_new = rel == "index.html" or rel in {
-            "about.html",
-            "privacy.html",
-            "guides/index.html",
-        } or rel.startswith("robots/")
         if rel == "index.html":
             priority = "1.0"
         elif rel == "robots/index.html":
             priority = "0.95"
         elif rel.startswith("robots/"):
             priority = "0.9"
-        elif rel == "guides/index.html":
-            priority = "0.6"
-        elif rel == "quiz.html":
-            priority = "0.4"
         else:
             priority = "0.5"
         rows.append(
             "  <url>\n"
             f"    <loc>{public_url(page)}</loc>\n"
-            f"    <lastmod>{'2026-09-14' if is_new else '2026-08-17'}</lastmod>\n"
+            "    <lastmod>2026-11-26</lastmod>\n"
             f"    <changefreq>{'weekly' if rel.startswith('robots/') or rel == 'index.html' else 'monthly'}</changefreq>\n"
             f"    <priority>{priority}</priority>\n"
             "  </url>"
@@ -352,8 +359,8 @@ def render_feed(models: list[dict]) -> str:
     <title>{esc(item["brand"])} {esc(item["model"])} replacement-parts compatibility</title>
     <id>{BASE}robots/{esc(item["slug"])}.html</id>
     <link href="{BASE}robots/{esc(item["slug"])}.html" />
-    <updated>2026-09-14T03:00:00Z</updated>
-    <summary>Manufacturer-source-backed fit notes for dust bags, filters, mop pads, and brushes.</summary>
+    <updated>2026-11-26T03:00:00Z</updated>
+    <summary>{esc(item["deck"])}</summary>
   </entry>"""
         for item in models
     )
@@ -363,7 +370,7 @@ def render_feed(models: list[dict]) -> str:
   <id>{BASE}</id>
   <link href="{BASE}" />
   <link href="{BASE}feed.xml" rel="self" type="application/atom+xml" />
-  <updated>2026-09-14T03:00:00Z</updated>
+  <updated>2026-11-26T03:00:00Z</updated>
   <author><name>US Scene Buy</name></author>
 {entries}
 </feed>
@@ -389,8 +396,8 @@ def render_llms(models: list[dict]) -> str:
 {model_links}
 
 ## Archived experiment
-- [Kitchen-drain guide archive]({BASE}guides/): Existing drain pages remain available but are not the current expansion path.
-- [Legacy kitchen-drain selector]({BASE}quiz.html): Archived five-question browser-only tool.
+- [Kitchen-drain guide archive]({BASE}guides/): Kept online for old links. Noindex, and absent from the sitemap.
+- [Legacy kitchen-drain selector]({BASE}quiz.html): Archived five-question browser-only tool. Noindex.
 
 ## Rules stated on-site
 - Keep every model suffix, including Pro, MaxV, Plus, Ultra, and Gen 2.

@@ -21,8 +21,8 @@
 - [Dreame L10s Ultra Gen 2](https://van0710-source.github.io/us-scene-buy/robots/dreame-l10s-ultra-gen-2-replacement-parts.html): X30 / selected later L-series accessory family; includes an explicit near-model warning.
 
 ## Archived experiment
-- [Kitchen-drain guide archive](https://van0710-source.github.io/us-scene-buy/guides/): Existing drain pages remain available but are not the current expansion path.
-- [Legacy kitchen-drain selector](https://van0710-source.github.io/us-scene-buy/quiz.html): Archived five-question browser-only tool.
+- [Kitchen-drain guide archive](https://van0710-source.github.io/us-scene-buy/guides/): Kept online for old links. Noindex, and absent from the sitemap.
+- [Legacy kitchen-drain selector](https://van0710-source.github.io/us-scene-buy/quiz.html): Archived five-question browser-only tool. Noindex.
 
 ## Rules stated on-site
 - Keep every model suffix, including Pro, MaxV, Plus, Ultra, and Gen 2.

@@ -92,6 +92,12 @@ def main() -> int:
             url = base + rel[: -len("index.html")]
         else:
             url = base + rel
+        page_text = page.read_text(encoding="utf-8").lower()
+        noindex = 'name="robots"' in page_text and "noindex" in page_text
+        if noindex:
+            if url in urls:
+                errors.append(f"{page.relative_to(ROOT)}: noindex page is still in the sitemap")
+            continue
         if url not in urls:
             errors.append(f"{page.relative_to(ROOT)}: missing from sitemap")
 

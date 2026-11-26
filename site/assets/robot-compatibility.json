@@ -5,19 +5,30 @@
     "slug": "roborock-qrevo-pro-replacement-parts",
     "aliases": ["Q Revo Pro"],
     "fit_family": "Standard Qrevo round-mop family",
-    "warning": "Use the later Qrevo Filter-E family—not the original Q Revo Filter-B. Qrevo S Pro is a separate model, and Curv/Edge DuoDivide brushes do not fit.",
+    "deck": "Qrevo Pro keeps the all-rubber main brush. Roborock’s Pro page also says the same machine may be shown as Q Revo Pro.",
+    "warning": "Qrevo S Pro is a separate model. The washable filter titled for original Qrevo only says it does not fit other Qrevo-series models. Curv and Edge appear on the Pro filter title, but not on the Pro main-brush title.",
+    "notes": [
+      "On the robot or in the app, the name is Roborock Qrevo Pro. Roborock’s Pro page says that during a transitional period the same machine may be depicted as Roborock Q Revo Pro.",
+      "Qrevo S Pro has its own Roborock page. This fit check does not cover S Pro. The main-brush product title that includes the words Qrevo Pro does not include the words Qrevo S Pro.",
+      "Pro’s washable filter is the 2-piece whose title names Qrevo S, Qrevo MaxV, Qrevo Pro, Qrevo Plus, Qrevo Curv Series, Qrevo Edge Series, QV Series, and Qrevo S5V. A different Roborock filter is titled for original Qrevo only and says it is incompatible with other models in the Qrevo series.",
+      "The brush list is narrower than the filter list. Curv and Edge are on that washable-filter title, and Qrevo CurvX is on the 4-piece mop-cloth title, but the main-brush title that includes Pro does not name Qrevo Curv or Qrevo Edge. The Pro page lists an all-rubber main brush.",
+      "The 6-piece dock bag is titled for the Qrevo Series as a group. The same title also names S8 MaxV Ultra, S8 Max Ultra, Qrevo Curv Series, Qrevo Edge Series, Saros Series, and QV Series. A bag from that title does not by itself identify the Pro roller."
+    ],
     "parts": [
-      {"type": "Dust bags", "fit": "Qrevo-series dock dust bags; the official bag page includes Qrevo Pro.", "query": "Roborock Qrevo Pro dust bags"},
-      {"type": "Washable filters", "fit": "Later Qrevo Filter-E family; the official compatibility list includes Pro. Original Q Revo Filter-B does not fit.", "query": "Roborock Qrevo Pro Filter E washable filters"},
-      {"type": "Mop cloths", "fit": "Round spinning mop cloths listed by Roborock for Qrevo Pro.", "query": "Roborock Qrevo Pro mop cloth replacement"},
-      {"type": "Main brush", "fit": "Standard all-rubber Qrevo main brush; the official list includes Qrevo Pro.", "query": "Roborock Qrevo Pro main brush replacement"}
+      {"type": "Dust bags", "fit": "Use the 6-piece bag titled for the Qrevo Series as a group. That title also names S8 MaxV Ultra, S8 Max Ultra, Curv Series, Edge Series, Saros Series, and QV Series, so the bag name will not say Pro by itself.", "query": "Roborock Qrevo Pro dust bags"},
+      {"type": "Washable filters", "fit": "Pro is named on the multi-model 2-piece with S, MaxV, Plus, Curv Series, Edge Series, QV Series, and S5V. Skip the filter Roborock titles for original Qrevo only.", "query": "Roborock Qrevo Pro washable filter"},
+      {"type": "Mop cloths", "fit": "The 4-piece mop-cloth title names Qrevo Pro together with S5V, original Qrevo, S, Master, MaxV, Plus, Slim, and CurvX.", "query": "Roborock Qrevo Pro mop cloth"},
+      {"type": "Main brush", "fit": "The main-brush title names Qrevo Pro with Qrevo, MaxV, S, Plus, QV 35A, QV 35S, Q7 Max, S7 MaxV, S7 Pro Ultra, and S7 Max Ultra. It does not name Curv, Edge, or Qrevo S Pro. The Pro page calls this brush all-rubber.", "query": "Roborock Qrevo Pro main brush"}
     ],
     "sources": [
+      {"label": "Roborock Qrevo Pro product page, including the Q Revo Pro name", "url": "https://us.roborock.com/pages/roborock-q-revo-pro"},
       {"label": "Roborock Qrevo Pro official user manual", "url": "https://support.roborock.com/hc/en-us/articles/31584672715929-Roborock-Qrevo-Pro-FCC-User-Manual-EN-FR-ES-Latin-Br-Pt"},
-      {"label": "Roborock Qrevo-series dust bag compatibility", "url": "https://us.roborock.com/products/roborock-dust-bag-6pcs-for-q-revo"},
-      {"label": "Roborock Qrevo mop cloth compatibility", "url": "https://us.roborock.com/products/roborock-mop-cloth-4pcs-for-q-revo"},
-      {"label": "Roborock Qrevo MaxV accessory compatibility list", "url": "https://us.roborock.com/products/roborock-qrevo-maxv"},
-      {"label": "Roborock Qrevo washable-filter compatibility list", "url": "https://us.roborock.com/products/roborock-qrevo-edge-s5a"}
+      {"label": "Roborock 6-piece dust bag titled for the Qrevo Series and other named series", "url": "https://us.roborock.com/products/roborock-dust-bag-6pcs-for-q-revo"},
+      {"label": "Roborock 2-piece washable filter naming Pro, S, MaxV, Plus, Curv, Edge, QV, and S5V", "url": "https://us.roborock.com/products/roborock-washable-filter-2-pcs-for-roborock-qrevo-s-qrevo-maxv-qrevo-pro-qrevo-plus-qrevo-curv-series-qrevo-edge-series-qv-series-and-qrevo-s5v"},
+      {"label": "Roborock washable filter titled for original Qrevo only", "url": "https://us.roborock.com/products/roborock-washable-filter-2-pcs-for-roborock-q-revo"},
+      {"label": "Roborock 4-piece mop cloth naming Pro, S, MaxV, Plus, and nearby models", "url": "https://us.roborock.com/products/roborock-mop-cloth-4pcs-for-q-revo"},
+      {"label": "Roborock main brush naming Qrevo, MaxV, S, Pro, and Plus", "url": "https://us.roborock.com/products/s7-main-brush"},
+      {"label": "Roborock main-brush cover naming Qrevo, Pro, Plus, S, and MaxV", "url": "https://us.roborock.com/products/roborock-main-brush-cover-for-q-revo"}
     ]
   },
   {
@@ -26,19 +37,30 @@
     "slug": "roborock-qrevo-maxv-replacement-parts",
     "aliases": ["Q Revo MaxV"],
     "fit_family": "Standard Qrevo round-mop family",
-    "warning": "Qrevo MaxV is not S8 MaxV Ultra. Use the later Qrevo Filter-E family—not original Q Revo Filter-B—and avoid Curv/Edge DuoDivide brushes.",
+    "deck": "Qrevo MaxV is the Dock 2.0 machine with an all-rubber brush and lifting dual mops. It is not S8 MaxV Ultra, even when a dust-bag title prints both names.",
+    "warning": "S8 MaxV Ultra sits on the same 6-piece dust-bag title as the Qrevo Series. The main-brush title names Qrevo MaxV and S7 MaxV, and it does not name S8 MaxV Ultra.",
+    "notes": [
+      "Confirm the label says Qrevo MaxV, also written Q Revo MaxV. The MaxV product page describes Multifunctional Dock 2.0, an all-rubber main brush, and dual spinning mops that lift. That page is not the S8 MaxV Ultra.",
+      "The MaxV mix-up is bag versus brush. The 6-piece dust-bag title puts “Qrevo Series” in the same product name as S8 MaxV Ultra and S8 Max Ultra. The main-brush title names Qrevo MaxV and also S7 MaxV, Qrevo, Qrevo S, Qrevo Pro, Qrevo Plus, QV 35A, QV 35S, Q7 Max, S7 Pro Ultra, and S7 Max Ultra. S8 MaxV Ultra is not in that brush title.",
+      "Qrevo Curv and Qrevo Edge are also absent from the MaxV main-brush title. They do show up on the 2-piece washable filter that names Qrevo MaxV with S, Pro, Plus, Curv Series, Edge Series, QV Series, and S5V. Order the filter and the brush from those two different titles.",
+      "MaxV mop cloths are the 4-piece whose title also names S5V, original Qrevo, Pro, S, Master, Plus, Slim, and CurvX. Master and Slim are on that cloth title, then leave the brush title. Roborock sells their washable filter as a separate 2-piece for Qrevo Master, Qrevo Slim, and Saros Z70.",
+      "Do not substitute the filter titled for original Qrevo only. That product says it is incompatible with other models in the Qrevo series."
+    ],
     "parts": [
-      {"type": "Dust bags", "fit": "Qrevo-series dock dust bags; the official bag page includes Qrevo MaxV.", "query": "Roborock Qrevo MaxV dust bags"},
-      {"type": "Washable filters", "fit": "Later Qrevo Filter-E family listed for MaxV. Original Q Revo Filter-B does not fit.", "query": "Roborock Qrevo MaxV Filter E washable filters"},
-      {"type": "Mop cloths", "fit": "Round spinning Qrevo mop cloths; the official cloth page includes MaxV.", "query": "Roborock Qrevo MaxV mop cloth replacement"},
-      {"type": "Main brush", "fit": "Standard all-rubber Qrevo main brush listed for Qrevo MaxV.", "query": "Roborock Qrevo MaxV main brush replacement"}
+      {"type": "Dust bags", "fit": "The 6-piece bag title groups the Qrevo Series with S8 MaxV Ultra, S8 Max Ultra, Curv Series, Edge Series, Saros Series, and QV Series. Matching that bag does not mean the brush is the MaxV roller.", "query": "Roborock Qrevo MaxV dust bags"},
+      {"type": "Washable filters", "fit": "MaxV is named on the 2-piece with S, Pro, Plus, Curv Series, Edge Series, QV Series, and S5V. Master, Slim, and Saros Z70 use a different 2-piece. Original Qrevo uses a third filter that says it does not fit other Qrevo-series models.", "query": "Roborock Qrevo MaxV washable filter"},
+      {"type": "Mop cloths", "fit": "The 4-piece cloth title names Qrevo MaxV with S5V, original Qrevo, Pro, S, Master, Plus, Slim, and CurvX. A cloth match is not a brush match.", "query": "Roborock Qrevo MaxV mop cloth"},
+      {"type": "Main brush", "fit": "The MaxV product page describes an all-rubber main brush. The replacement-brush title includes Qrevo MaxV and S7 MaxV, and it omits S8 MaxV Ultra, Qrevo Curv, and Qrevo Edge.", "query": "Roborock Qrevo MaxV main brush"}
     ],
     "sources": [
-      {"label": "Roborock Qrevo MaxV product and accessory list", "url": "https://us.roborock.com/products/roborock-qrevo-maxv"},
+      {"label": "Roborock Qrevo MaxV product page", "url": "https://us.roborock.com/products/roborock-qrevo-maxv"},
       {"label": "Roborock Qrevo MaxV official user manual", "url": "https://support.roborock.com/hc/en-us/articles/31557088409753-Roborock-Qrevo-MaxV-FCC-user-manual"},
-      {"label": "Roborock Qrevo-series dust bag compatibility", "url": "https://us.roborock.com/products/roborock-dust-bag-6pcs-for-q-revo"},
-      {"label": "Roborock Qrevo mop cloth compatibility", "url": "https://us.roborock.com/products/roborock-mop-cloth-4pcs-for-q-revo"},
-      {"label": "Roborock Qrevo washable-filter compatibility list", "url": "https://us.roborock.com/products/roborock-qrevo-edge-s5a"}
+      {"label": "Roborock 6-piece dust bag titled for the Qrevo Series and S8 MaxV Ultra", "url": "https://us.roborock.com/products/roborock-dust-bag-6pcs-for-q-revo"},
+      {"label": "Roborock 2-piece washable filter naming MaxV, S, Pro, Plus, Curv, Edge, QV, and S5V", "url": "https://us.roborock.com/products/roborock-washable-filter-2-pcs-for-roborock-qrevo-s-qrevo-maxv-qrevo-pro-qrevo-plus-qrevo-curv-series-qrevo-edge-series-qv-series-and-qrevo-s5v"},
+      {"label": "Separate washable filter for Qrevo Master, Qrevo Slim, and Saros Z70", "url": "https://us.roborock.com/products/roborock-washable-filter-2-pcs-for-roborock-qrevo-master"},
+      {"label": "Roborock washable filter titled for original Qrevo only", "url": "https://us.roborock.com/products/roborock-washable-filter-2-pcs-for-roborock-q-revo"},
+      {"label": "Roborock 4-piece mop cloth naming MaxV, Master, Slim, and CurvX", "url": "https://us.roborock.com/products/roborock-mop-cloth-4pcs-for-q-revo"},
+      {"label": "Roborock main brush naming Qrevo MaxV and S7 MaxV, not S8 MaxV Ultra", "url": "https://us.roborock.com/products/s7-main-brush"}
     ]
   },
   {
@@ -47,20 +69,31 @@
     "slug": "roborock-qrevo-s-replacement-parts",
     "aliases": ["Q Revo S"],
     "fit_family": "Standard Qrevo round-mop family",
-    "warning": "Use the later Qrevo Filter-E family—not original Q Revo Filter-B. Do not buy Qrevo Curv or Qrevo Edge DuoDivide brush parts for Qrevo S.",
+    "deck": "Qrevo S is named by itself on the filter, mop cloth, main brush, and main-brush cover. Qrevo S Pro is a different Roborock page.",
+    "warning": "The main-brush title includes the words Qrevo S and does not include Qrevo S Pro. Curv and Edge are on the S washable-filter title, and they are not on the S brush-cover title.",
+    "notes": [
+      "The label has to say Qrevo S, also written Q Revo S. Roborock publishes a separate Qrevo S Pro page. The main-brush product that lists Qrevo S does not list Qrevo S Pro.",
+      "S is one of the few models printed on the main-brush cover. That cover title is Qrevo, Qrevo Pro, Qrevo Plus, Qrevo S, Qrevo MaxV, QV 35A, and QV 35S. Qrevo Curv and Qrevo Edge are not on it.",
+      "The S washable filter is the 2-piece titled for Qrevo S, Qrevo MaxV, Qrevo Pro, Qrevo Plus, Qrevo Curv Series, Qrevo Edge Series, QV Series, and Qrevo S5V. The original-Qrevo-only filter says it is incompatible with other Qrevo-series models, so it is the wrong filter for S.",
+      "The mop-cloth title that includes Qrevo S also includes Qrevo Master, Qrevo Slim, and Qrevo CurvX. Those three names are not on the S main-brush title. Master and Slim use the washable filter sold for Qrevo Master, Qrevo Slim, and Saros Z70.",
+      "Dock bags for S are the 6-piece titled for the Qrevo Series. That title also names S8 MaxV Ultra, S8 Max Ultra, Curv Series, Edge Series, Saros Series, and QV Series. The bag title does not print the letter S by itself."
+    ],
     "parts": [
-      {"type": "Dust bags", "fit": "Qrevo-series dock dust bags; confirm Qrevo S in the current listing.", "query": "Roborock Qrevo S dust bags"},
-      {"type": "Washable filters", "fit": "Later Qrevo Filter-E family explicitly listed for Qrevo S. Original Q Revo Filter-B does not fit.", "query": "Roborock Qrevo S Filter E washable filters"},
-      {"type": "Mop cloths", "fit": "Round spinning mop cloths listed by Roborock for Qrevo S.", "query": "Roborock Qrevo S mop cloth replacement"},
-      {"type": "Main brush", "fit": "Standard all-rubber Qrevo main brush; the official list includes Qrevo S.", "query": "Roborock Qrevo S main brush replacement"}
+      {"type": "Dust bags", "fit": "S uses the Qrevo Series 6-piece bag. The title also names S8 MaxV Ultra, S8 Max Ultra, Curv Series, Edge Series, Saros Series, and QV Series, without printing “Qrevo S” as its own line.", "query": "Roborock Qrevo S dust bags"},
+      {"type": "Washable filters", "fit": "S is named first on the multi-model 2-piece, which continues with MaxV, Pro, Plus, Curv Series, Edge Series, QV Series, and S5V. Leave the original-Qrevo-only filter, and leave the Master/Slim/Saros Z70 filter.", "query": "Roborock Qrevo S washable filter"},
+      {"type": "Mop cloths", "fit": "The 4-piece cloth title names Qrevo S with S5V, original Qrevo, Pro, Master, MaxV, Plus, Slim, and CurvX.", "query": "Roborock Qrevo S mop cloth"},
+      {"type": "Main brush", "fit": "Both the main brush and the main-brush cover name Qrevo S. The cover list stops at Qrevo, Pro, Plus, S, MaxV, QV 35A, and QV 35S. It does not add S Pro, Curv, or Edge.", "query": "Roborock Qrevo S main brush"}
     ],
     "sources": [
       {"label": "Roborock Qrevo S product page", "url": "https://us.roborock.com/products/roborock-qrevo-s-vacuum"},
       {"label": "Roborock Qrevo S official user manual", "url": "https://support.roborock.com/hc/en-us/articles/33210757493913-Roborock-Qrevo-S-FCC-User-Manual-EN-FR-ES-Latin-Br-Pt"},
-      {"label": "Roborock Qrevo-series dust bag compatibility", "url": "https://us.roborock.com/products/roborock-dust-bag-6pcs-for-q-revo"},
-      {"label": "Roborock Qrevo mop cloth compatibility", "url": "https://us.roborock.com/products/roborock-mop-cloth-4pcs-for-q-revo"},
-      {"label": "Roborock Qrevo main-brush compatibility list", "url": "https://us.roborock.com/products/roborock-qrevo-maxv"},
-      {"label": "Roborock Qrevo washable-filter compatibility list", "url": "https://us.roborock.com/products/roborock-qrevo-edge-s5a"}
+      {"label": "Roborock 6-piece dust bag titled for the Qrevo Series", "url": "https://us.roborock.com/products/roborock-dust-bag-6pcs-for-q-revo"},
+      {"label": "Roborock 2-piece washable filter naming S, MaxV, Pro, Plus, Curv, Edge, QV, and S5V", "url": "https://us.roborock.com/products/roborock-washable-filter-2-pcs-for-roborock-qrevo-s-qrevo-maxv-qrevo-pro-qrevo-plus-qrevo-curv-series-qrevo-edge-series-qv-series-and-qrevo-s5v"},
+      {"label": "Roborock washable filter titled for original Qrevo only", "url": "https://us.roborock.com/products/roborock-washable-filter-2-pcs-for-roborock-q-revo"},
+      {"label": "Separate washable filter for Qrevo Master, Qrevo Slim, and Saros Z70", "url": "https://us.roborock.com/products/roborock-washable-filter-2-pcs-for-roborock-qrevo-master"},
+      {"label": "Roborock 4-piece mop cloth naming Qrevo S", "url": "https://us.roborock.com/products/roborock-mop-cloth-4pcs-for-q-revo"},
+      {"label": "Roborock main brush naming Qrevo S, not Qrevo S Pro", "url": "https://us.roborock.com/products/s7-main-brush"},
+      {"label": "Roborock main-brush cover naming Qrevo S, not Curv or Edge", "url": "https://us.roborock.com/products/roborock-main-brush-cover-for-q-revo"}
     ]
   },
   {
@@ -69,18 +102,29 @@
     "slug": "roborock-qrevo-plus-replacement-parts",
     "aliases": ["Q Revo Plus"],
     "fit_family": "Standard Qrevo round-mop family",
-    "warning": "Use the later Qrevo Filter-E family—not original Q Revo Filter-B. Qrevo Plus does not use the Curv or Edge DuoDivide brush family.",
+    "deck": "Qrevo Plus is printed on the filter, the mop cloth, the main brush, and the main-brush cover. The dock-bag title only says Qrevo Series.",
+    "warning": "Plus is not Qrevo Pro and it is not original Qrevo. The original-Qrevo-only washable filter says it is incompatible with other Qrevo-series models.",
+    "notes": [
+      "The full name is Qrevo Plus, also written Q Revo Plus. Plus is not Qrevo Pro. The main-brush cover is one of the official titles that prints Plus by name beside Pro, S, and MaxV.",
+      "That cover title reads Qrevo, Qrevo Pro, Qrevo Plus, Qrevo S, Qrevo MaxV, QV 35A, and QV 35S. Qrevo Curv and Qrevo Edge are left off the cover and off the main-brush title that includes Plus.",
+      "The Plus washable filter is the 2-piece whose title runs Qrevo S, Qrevo MaxV, Qrevo Pro, Qrevo Plus, Qrevo Curv Series, Qrevo Edge Series, QV Series, and Qrevo S5V. Curv and Edge on the filter title are not permission to buy their brushes.",
+      "A second filter, titled for Roborock Qrevo only, states that it is incompatible with other models in the Qrevo series. Qrevo Master, Qrevo Slim, and Saros Z70 have a third 2-piece of their own.",
+      "Plus mop cloths come from the 4-piece that also names S5V, original Qrevo, Pro, S, Master, MaxV, Slim, and CurvX. The 6-piece dock bag does not print the word Plus. It says Qrevo Series, and it also names S8 MaxV Ultra, S8 Max Ultra, Curv Series, Edge Series, Saros Series, and QV Series."
+    ],
     "parts": [
-      {"type": "Dust bags", "fit": "Qrevo-series dock dust bags; confirm Qrevo Plus in the current listing.", "query": "Roborock Qrevo Plus dust bags"},
-      {"type": "Washable filters", "fit": "Later Qrevo Filter-E family explicitly listed for Qrevo Plus. Original Q Revo Filter-B does not fit.", "query": "Roborock Qrevo Plus Filter E washable filters"},
-      {"type": "Mop cloths", "fit": "Round spinning mop cloths listed by Roborock for Qrevo Plus.", "query": "Roborock Qrevo Plus mop cloth replacement"},
-      {"type": "Main brush", "fit": "Standard all-rubber Qrevo main brush; the official list includes Qrevo Plus.", "query": "Roborock Qrevo Plus main brush replacement"}
+      {"type": "Dust bags", "fit": "Plus takes the Qrevo Series 6-piece bag. The product title does not say Plus; it also names S8 MaxV Ultra, S8 Max Ultra, Curv Series, Edge Series, Saros Series, and QV Series.", "query": "Roborock Qrevo Plus dust bags"},
+      {"type": "Washable filters", "fit": "Plus is named on the 2-piece with S, MaxV, Pro, Curv Series, Edge Series, QV Series, and S5V. Do not order the original-Qrevo-only filter or the Master/Slim/Saros Z70 filter.", "query": "Roborock Qrevo Plus washable filter"},
+      {"type": "Mop cloths", "fit": "The 4-piece cloth title names Qrevo Plus with S5V, original Qrevo, Pro, S, Master, MaxV, Slim, and CurvX.", "query": "Roborock Qrevo Plus mop cloth"},
+      {"type": "Main brush", "fit": "The main-brush title and the brush-cover title both print Qrevo Plus. The cover list is Qrevo, Pro, Plus, S, MaxV, QV 35A, and QV 35S, without Curv or Edge.", "query": "Roborock Qrevo Plus main brush"}
     ],
     "sources": [
-      {"label": "Roborock Qrevo-series dust bag compatibility", "url": "https://us.roborock.com/products/roborock-dust-bag-6pcs-for-q-revo"},
-      {"label": "Roborock Qrevo mop cloth compatibility", "url": "https://us.roborock.com/products/roborock-mop-cloth-4pcs-for-q-revo"},
-      {"label": "Roborock Qrevo main-brush compatibility list", "url": "https://us.roborock.com/products/roborock-qrevo-maxv"},
-      {"label": "Roborock Qrevo washable-filter compatibility list", "url": "https://us.roborock.com/products/roborock-qrevo-edge-s5a"}
+      {"label": "Roborock 6-piece dust bag titled for the Qrevo Series, without the word Plus", "url": "https://us.roborock.com/products/roborock-dust-bag-6pcs-for-q-revo"},
+      {"label": "Roborock 2-piece washable filter naming Plus, S, MaxV, Pro, Curv, Edge, QV, and S5V", "url": "https://us.roborock.com/products/roborock-washable-filter-2-pcs-for-roborock-qrevo-s-qrevo-maxv-qrevo-pro-qrevo-plus-qrevo-curv-series-qrevo-edge-series-qv-series-and-qrevo-s5v"},
+      {"label": "Roborock washable filter titled for original Qrevo only", "url": "https://us.roborock.com/products/roborock-washable-filter-2-pcs-for-roborock-q-revo"},
+      {"label": "Separate washable filter for Qrevo Master, Qrevo Slim, and Saros Z70", "url": "https://us.roborock.com/products/roborock-washable-filter-2-pcs-for-roborock-qrevo-master"},
+      {"label": "Roborock 4-piece mop cloth naming Qrevo Plus", "url": "https://us.roborock.com/products/roborock-mop-cloth-4pcs-for-q-revo"},
+      {"label": "Roborock main brush naming Qrevo Plus", "url": "https://us.roborock.com/products/s7-main-brush"},
+      {"label": "Roborock main-brush cover naming Qrevo Plus beside Pro, S, and MaxV", "url": "https://us.roborock.com/products/roborock-main-brush-cover-for-q-revo"}
     ]
   },
   {
@@ -89,17 +133,25 @@
     "slug": "dreame-l10s-ultra-replacement-parts",
     "aliases": ["DreameBot L10s Ultra"],
     "fit_family": "Original L10s Ultra accessory family",
-    "warning": "L10s Ultra is not L10s Ultra Gen 2 or L10s Pro Ultra. Dreame publishes separate compatibility for those later variants.",
+    "deck": "The original L10s Ultra kit page lists that one model and packs 6 mop pads. L10s Ultra Gen 2 is on a different kit, with 3 wash-free mop pads.",
+    "warning": "L10s Ultra Gen 2, L10s Pro Ultra, and L10s Pro Gen2 are different names. Gen 2 is not on the original L10s Ultra kit page.",
+    "notes": [
+      "Dreame’s L10s Ultra accessory-kit page lists one robot: L10s Ultra. The kit contains 1 main roller brush, 2 side brushes, 2 filters, 6 mop pads (3 pairs), and 2 dust bags.",
+      "The 3-pack dust-bag page says those bags are made specifically for L20 Ultra and L10s Ultra. It does not name L10s Ultra Gen 2. A shared bag with L20 Ultra does not mean the L20 kit is this kit.",
+      "The dust-box filter title names L10s Ultra, L10s Pro Gen2, L10s Plus, and D10s Plus Gen2. The product text also names GoVac 300, GoVac 200, L10s Pro, and D10s Plus. L10s Ultra Gen 2 and L10s Pro Ultra are not in that title.",
+      "Gen 2 is listed on another Dreame kit. That kit’s title leads with L40s Ultra AE, L40s Ultra CE, and L10s Ultra Gen2, and its contents are 1 main brush, 2 side brushes, 2 dust-collection bags, 2 dust-box filters, and 3 wash-free mop pads. This original kit uses 6 mop pads, not those 3 wash-free pads."
+    ],
     "parts": [
-      {"type": "Dust bags", "fit": "Official 3 L bag family shared by L10s Ultra and L20 Ultra.", "query": "Dreame L10s Ultra dust bags"},
-      {"type": "Dust-box filters", "fit": "Original L10s Ultra filter family; Dreame explicitly says it does not fit L10s Pro Ultra.", "query": "Dreame L10s Ultra dust box filters"},
-      {"type": "Mop pads", "fit": "Round mop pads included in the official L10s Ultra accessory kit.", "query": "Dreame L10s Ultra mop pads"},
-      {"type": "Brushes", "fit": "Main roller and side brushes included in the official L10s Ultra accessory kit.", "query": "Dreame L10s Ultra main side brush kit"}
+      {"type": "Dust bags", "fit": "The official 3-pack says the bags are made specifically for L20 Ultra and original L10s Ultra. Gen 2 is not named on that bag page.", "query": "Dreame L10s Ultra dust bags"},
+      {"type": "Dust-box filters", "fit": "The filter title names original L10s Ultra with L10s Pro Gen2, L10s Plus, and D10s Plus Gen2. The text also names GoVac 300, GoVac 200, L10s Pro, and D10s Plus. It does not name L10s Ultra Gen 2 or L10s Pro Ultra.", "query": "Dreame L10s Ultra dust box filter"},
+      {"type": "Mop pads", "fit": "The original L10s Ultra kit includes 6 mop pads, described as 3 pairs. The Gen 2 kit on the other page includes 3 wash-free mop pads instead.", "query": "Dreame L10s Ultra mop pads"},
+      {"type": "Brushes", "fit": "The original kit counts 1 main roller brush and 2 side brushes, and the compatibility line on that kit page is only L10s Ultra.", "query": "Dreame L10s Ultra main brush side brushes"}
     ],
     "sources": [
-      {"label": "Dreame L10s Ultra official accessory kit", "url": "https://www.dreametech.com/products/accessory-kit-for-dreamebot-l10s-ultra"},
-      {"label": "Dreame L10s Ultra filter compatibility", "url": "https://www.dreametech.com/products/filters-2-pack-for-l10s-ultra"},
-      {"label": "Dreame L10s Ultra and L20 Ultra dust bags", "url": "https://www.dreametech.com/products/dust-bags-3-for-dreamebot-l10s-ultra"}
+      {"label": "Dreame L10s Ultra accessory kit, listed for L10s Ultra only", "url": "https://www.dreametech.com/products/accessory-kit-for-dreamebot-l10s-ultra"},
+      {"label": "Dreame dust-box filter title for L10s Ultra, L10s Pro Gen2, L10s Plus, and D10s Plus Gen2", "url": "https://www.dreametech.com/products/filters-2-pack-for-l10s-ultra"},
+      {"label": "Dreame 3-pack dust bags made for L20 Ultra and L10s Ultra", "url": "https://www.dreametech.com/products/dust-bags-3-for-dreamebot-l10s-ultra"},
+      {"label": "Separate Dreame kit that names L10s Ultra Gen2, not original L10s Ultra", "url": "https://www.dreametech.com/products/x30-ultra-accessory-kit"}
     ]
   },
   {
@@ -108,18 +160,26 @@
     "slug": "dreame-l20-ultra-replacement-parts",
     "aliases": ["DreameBot L20 Ultra"],
     "fit_family": "L20 Ultra accessory family",
-    "warning": "Do not assume L20 Ultra parts fit L40 Ultra because both are “Ultra” docks. Use the model-specific kit family.",
+    "deck": "Dreame’s L20 Ultra kit page names only the L20 Ultra. The dust bags are the piece it shares with original L10s Ultra.",
+    "warning": "L40 Ultra uses a different official kit, with wash-free mop pads and the names X40 Ultra, L40 Ultra, and GoVac 508. The word Ultra does not move an L20 onto that list.",
+    "notes": [
+      "The L20 Ultra accessory-kit page says the kit is made for Dreame Robot Vacuum L20 Ultra. Counted contents are 1 main roller brush, 2 side brushes, 2 filters, 6 mop pads (3 pairs), and 2 dust bags.",
+      "Dreame’s L20 Ultra dust-box filter page says the 2-pack is compatible with the L20 Ultra and recommends replacing that filter every 3 to 6 months. That sentence names L20 Ultra, not L10s Ultra.",
+      "Dust bags are the shared consumable. The 3-pack page says the bags are made specifically for L20 Ultra and L10s Ultra. The L20 kit page does not say the roller, side brushes, filters, or mop pads fit the L10s Ultra.",
+      "L40 Ultra is a different dock family. Its kit title is X40 Ultra/L40 Ultra, the compatibility line adds GoVac 508, and the kit counts 6 wash-free mop pads. L10s Ultra Gen 2 is on yet another kit, the one that leads with L40s Ultra AE and packs 3 wash-free mop pads."
+    ],
     "parts": [
-      {"type": "Dust bags", "fit": "Official 3 L bag family shared by L20 Ultra and original L10s Ultra.", "query": "Dreame L20 Ultra dust bags"},
-      {"type": "Dust-box filters", "fit": "Model-specific L20 Ultra filters listed by Dreame.", "query": "Dreame L20 Ultra dust box filters"},
-      {"type": "Mop pads", "fit": "Six round mop pads are included in the official L20 Ultra kit.", "query": "Dreame L20 Ultra mop pads"},
-      {"type": "Brushes", "fit": "Main roller and side brushes included in the official L20 Ultra kit.", "query": "Dreame L20 Ultra main side brush kit"}
+      {"type": "Dust bags", "fit": "The 3-pack is made specifically for L20 Ultra and original L10s Ultra. It is the shared part, not proof that the rest of the L20 kit fits an L10s.", "query": "Dreame L20 Ultra dust bags"},
+      {"type": "Dust-box filters", "fit": "Dreame’s L20 Ultra filter page says the 2-pack fits the L20 Ultra and recommends replacement every 3 to 6 months. The L10s Ultra filter title is a different product.", "query": "Dreame L20 Ultra dust box filter"},
+      {"type": "Mop pads", "fit": "The L20 kit includes 6 mop pads (3 pairs) for the L20 Ultra. The X40/L40 kit’s 6 pads are wash-free pads on a page that does not name the L20.", "query": "Dreame L20 Ultra mop pads"},
+      {"type": "Brushes", "fit": "The L20 kit counts 1 main roller brush and 2 side brushes, and the kit page names L20 Ultra rather than L40 Ultra or L10s Ultra.", "query": "Dreame L20 Ultra main brush side brushes"}
     ],
     "sources": [
-      {"label": "Dreame L20 Ultra official accessory kit", "url": "https://www.dreametech.com/products/l20-ultra-accessory-kit"},
-      {"label": "Dreame L20 Ultra official filters", "url": "https://www.dreametech.com/products/filter-for-dreamebot-l20-ultra"},
-      {"label": "Dreame L10s Ultra and L20 Ultra dust bags", "url": "https://www.dreametech.com/products/dust-bags-3-for-dreamebot-l10s-ultra"},
-      {"label": "Dreame L20 Ultra product page", "url": "https://www.dreametech.com/products/l20-ultra"}
+      {"label": "Dreame L20 Ultra accessory kit", "url": "https://www.dreametech.com/products/l20-ultra-accessory-kit"},
+      {"label": "Dreame L20 Ultra dust-box filter, 2-pack", "url": "https://www.dreametech.com/products/filter-for-dreamebot-l20-ultra"},
+      {"label": "Dreame 3-pack dust bags made for L20 Ultra and L10s Ultra", "url": "https://www.dreametech.com/products/dust-bags-3-for-dreamebot-l10s-ultra"},
+      {"label": "Dreame L20 Ultra product page", "url": "https://www.dreametech.com/products/l20-ultra"},
+      {"label": "Separate X40 Ultra/L40 Ultra kit, which does not name L20 Ultra", "url": "https://www.dreametech.com/products/x40-ultra-accessory-cleaning-kit"}
     ]
   },
   {
@@ -128,16 +188,25 @@
     "slug": "dreame-x30-ultra-replacement-parts",
     "aliases": ["DreameBot X30 Ultra"],
     "fit_family": "X30 / selected later L-series accessory family",
-    "warning": "X30 Ultra is not X40 Ultra. Dreame places X40/L40 Ultra in a different accessory-kit family.",
+    "deck": "X30 Ultra is one name on a Dreame kit whose title leads with L40s Ultra AE, L40s Ultra CE, and L10s Ultra Gen2. That kit packs 3 wash-free mop pads.",
+    "warning": "X40 Ultra is not on this kit. The X40/L40 Ultra kit is a separate page and packs 6 wash-free mop pads.",
+    "notes": [
+      "The live kit title is Dreame L40s Ultra AE/L40s Ultra CE/L10s Ultra Gen2, not “X30 only.” The compatibility line on that page names X30 Ultra, L40s Ultra AE, L40s Ultra CE, L10s Pro Ultra, L10s Ultra Gen2, D30 Ultra, D30 Ultra CE, GoVac 400, and GoVac 500.",
+      "Counted contents are 1 main brush, 2 side brushes, 2 dust-collection bags, 2 dust-box filters, and 3 wash-free mop pads.",
+      "Original L10s Ultra is missing from that compatibility line. Original L10s Ultra has its own kit page, with 6 mop pads (3 pairs) and 2 dust bags, and a dust-bag 3-pack shared with L20 Ultra.",
+      "X40 Ultra is also missing. The X40 Ultra/L40 Ultra kit names X40 Ultra, L40 Ultra, and GoVac 508, and it includes 6 wash-free mop pads. GoVac 400 and GoVac 500 stay on the X30 kit; GoVac 508 does not."
+    ],
     "parts": [
-      {"type": "Dust bags", "fit": "Dust bags included in Dreame’s official X30-compatible kit.", "query": "Dreame X30 Ultra dust bags"},
-      {"type": "Dust-box filters", "fit": "Dust-box filters included in the official X30-compatible kit.", "query": "Dreame X30 Ultra dust box filters"},
-      {"type": "Mop pads", "fit": "Wash-free mop pads included in the official X30-compatible kit.", "query": "Dreame X30 Ultra mop pads"},
-      {"type": "Brushes", "fit": "Main and side brushes included in the official X30-compatible kit.", "query": "Dreame X30 Ultra main side brush kit"}
+      {"type": "Dust bags", "fit": "Dust-collection bags are part of the kit whose compatibility line includes X30 Ultra and the L40s Ultra AE/CE and L10s Ultra Gen2 names. They are not the L10s/L20 3-pack.", "query": "Dreame X30 Ultra dust bags"},
+      {"type": "Dust-box filters", "fit": "The same kit includes 2 dust-box filters for every model on that compatibility line, including X30 Ultra. The original L10s Ultra filter title is a different product.", "query": "Dreame X30 Ultra dust box filter"},
+      {"type": "Mop pads", "fit": "This kit includes 3 wash-free mop pads. The X40/L40 Ultra kit includes 6 wash-free mop pads and does not name the X30 Ultra.", "query": "Dreame X30 Ultra mop pads"},
+      {"type": "Brushes", "fit": "The kit counts 1 main brush and 2 side brushes for X30 Ultra and the other models printed on that same compatibility line.", "query": "Dreame X30 Ultra main brush side brushes"}
     ],
     "sources": [
-      {"label": "Dreame official X30-compatible accessory kit", "url": "https://www.dreametech.com/products/x30-ultra-accessory-kit"},
-      {"label": "Dreame X30 Ultra product page", "url": "https://www.dreametech.com/products/dreame-x30-ultra"}
+      {"label": "Dreame kit naming X30 Ultra, L40s Ultra AE/CE, L10s Ultra Gen2, and related models", "url": "https://www.dreametech.com/products/x30-ultra-accessory-kit"},
+      {"label": "Dreame X30 Ultra product page", "url": "https://www.dreametech.com/products/dreame-x30-ultra"},
+      {"label": "Separate X40 Ultra/L40 Ultra kit with 6 wash-free mop pads", "url": "https://www.dreametech.com/products/x40-ultra-accessory-cleaning-kit"},
+      {"label": "Original L10s Ultra kit, which does not name X30 Ultra", "url": "https://www.dreametech.com/products/accessory-kit-for-dreamebot-l10s-ultra"}
     ]
   },
   {
@@ -146,16 +215,25 @@
     "slug": "dreame-x40-ultra-replacement-parts",
     "aliases": ["DreameBot X40 Ultra"],
     "fit_family": "X40 Ultra / original L40 Ultra accessory family",
-    "warning": "This family covers X40 Ultra and original L40 Ultra—not L40 Ultra Gen 2, L40s Ultra AE, or L40s Ultra CE.",
+    "deck": "The official kit title is X40 Ultra/L40 Ultra. The compatibility line adds GoVac 508 and the kit packs 6 wash-free mop pads.",
+    "warning": "L40 Ultra Gen 2 has a separate kit that names L40 Ultra Gen 2 and GoVac 405. L40s Ultra AE and L40s Ultra CE are on the other kit, the one with 3 wash-free mop pads.",
+    "notes": [
+      "Dreame’s kit title for this robot is X40 Ultra/L40 Ultra. The compatibility line is X40 Ultra, L40 Ultra, and GoVac 508.",
+      "Counted contents are 1 main brush, 2 side brushes, 2 dust-collection bags, 2 dust-box filters, and 6 wash-free mop pads.",
+      "L40 Ultra Gen 2 is not on that list. Dreame’s Gen 2 kit is titled L40 Ultra Gen 2, names L40 Ultra Gen 2 and GoVac 405, and counts a rubber roller brush, 2 side brushes, 2 dust-box filters, 2 dust bags, and 6 mops.",
+      "L40s Ultra AE, L40s Ultra CE, X30 Ultra, and L10s Ultra Gen2 belong to the other accessory kit. That kit packs 3 wash-free mop pads, not these 6, and its compatibility line includes GoVac 400 and GoVac 500 rather than GoVac 508."
+    ],
     "parts": [
-      {"type": "Dust bags", "fit": "Dust-collection bags included in the official X40/L40 Ultra kit.", "query": "Dreame X40 Ultra dust bags"},
-      {"type": "Dust-box filters", "fit": "Dust-box filters included in the official X40/L40 Ultra kit.", "query": "Dreame X40 Ultra dust box filters"},
-      {"type": "Mop pads", "fit": "Wash-free mop pads included in the official X40/L40 Ultra kit.", "query": "Dreame X40 Ultra mop pads"},
-      {"type": "Brushes", "fit": "Main and side brushes included in the official X40/L40 Ultra kit.", "query": "Dreame X40 Ultra main side brush kit"}
+      {"type": "Dust bags", "fit": "Dust-collection bags on this page come from the X40 Ultra/L40 Ultra kit, whose third named robot is GoVac 508. Gen 2 bags are on the Gen 2 kit instead.", "query": "Dreame X40 Ultra dust bags"},
+      {"type": "Dust-box filters", "fit": "This kit includes 2 dust-box filters for X40 Ultra, L40 Ultra, and GoVac 508. The Gen 2 kit has its own 2 dust-box filters and does not name the X40 Ultra.", "query": "Dreame X40 Ultra dust box filter"},
+      {"type": "Mop pads", "fit": "Count 6 wash-free mop pads for the X40/L40 kit. The X30-family kit, which does not name X40 Ultra, counts 3 wash-free mop pads.", "query": "Dreame X40 Ultra mop pads"},
+      {"type": "Brushes", "fit": "This kit counts 1 main brush and 2 side brushes. The Gen 2 kit instead says rubber roller brush and names L40 Ultra Gen 2 and GoVac 405.", "query": "Dreame X40 Ultra main brush side brushes"}
     ],
     "sources": [
-      {"label": "Dreame official X40/L40 Ultra accessory kit", "url": "https://www.dreametech.com/products/x40-ultra-accessory-cleaning-kit"},
-      {"label": "Dreame X40 Ultra product page", "url": "https://www.dreametech.com/products/dreametech-x40-ultra-robot-vacuum"}
+      {"label": "Dreame X40 Ultra/L40 Ultra accessory kit, including GoVac 508", "url": "https://www.dreametech.com/products/x40-ultra-accessory-cleaning-kit"},
+      {"label": "Dreame X40 Ultra product page", "url": "https://www.dreametech.com/products/dreametech-x40-ultra-robot-vacuum"},
+      {"label": "Separate Dreame L40 Ultra Gen 2 kit, including GoVac 405", "url": "https://www.dreametech.com/products/dreame-l40-ultra-gen-2-accessory-cleaning-kit-membership"},
+      {"label": "Separate kit for X30 Ultra, L40s Ultra AE/CE, and L10s Ultra Gen2", "url": "https://www.dreametech.com/products/x30-ultra-accessory-kit"}
     ]
   },
   {
@@ -164,17 +242,25 @@
     "slug": "dreame-l40-ultra-replacement-parts",
     "aliases": ["DreameBot L40 Ultra"],
     "fit_family": "X40 Ultra / original L40 Ultra accessory family",
-    "warning": "Original L40 Ultra and L40 Ultra Gen 2 use separately listed accessory kits. Confirm that the machine label does not say “Gen 2.”",
+    "deck": "Original L40 Ultra shares the X40 Ultra kit: 6 wash-free mop pads, plus GoVac 508. The label must not say Gen 2.",
+    "warning": "L40 Ultra Gen 2 is a separate kit for L40 Ultra Gen 2 and GoVac 405. L40s Ultra AE and L40s Ultra CE are not this model.",
+    "notes": [
+      "Match a label that says L40 Ultra and does not say Gen 2. Dreame’s kit title for this machine is X40 Ultra/L40 Ultra. The compatibility line is X40 Ultra, L40 Ultra, and GoVac 508.",
+      "That kit contains 1 main brush, 2 side brushes, 2 dust-collection bags, 2 dust-box filters, and 6 wash-free mop pads.",
+      "The Gen 2 kit is a different product. Its title is L40 Ultra Gen 2, its compatibility line is L40 Ultra Gen 2 and GoVac 405, and its contents are 1 rubber roller brush, 2 side brushes, 2 dust-box filters, 2 dust bags, and 6 mops.",
+      "L40s Ultra AE and L40s Ultra CE look close and belong to the kit that leads with those names plus L10s Ultra Gen2. That kit also names X30 Ultra, D30 Ultra, GoVac 400, and GoVac 500, and it packs 3 wash-free mop pads rather than 6."
+    ],
     "parts": [
-      {"type": "Dust bags", "fit": "Dust-collection bags included in the official X40/L40 Ultra kit.", "query": "\"Dreame L40 Ultra\" dust bags"},
-      {"type": "Dust-box filters", "fit": "Dust-box filters included in the official X40/L40 Ultra kit.", "query": "\"Dreame L40 Ultra\" dust box filters"},
-      {"type": "Mop pads", "fit": "Wash-free mop pads included in the official X40/L40 Ultra kit.", "query": "\"Dreame L40 Ultra\" mop pads"},
-      {"type": "Brushes", "fit": "Main and side brushes included in the official X40/L40 Ultra kit.", "query": "\"Dreame L40 Ultra\" main side brush kit"}
+      {"type": "Dust bags", "fit": "Original L40 Ultra dust bags are in the X40 Ultra/L40 Ultra kit, together with GoVac 508. Gen 2 dust bags are in the Gen 2 kit with GoVac 405.", "query": "Dreame L40 Ultra dust bags"},
+      {"type": "Dust-box filters", "fit": "This kit includes 2 dust-box filters for original L40 Ultra and X40 Ultra. The Gen 2 page lists its own 2 dust-box filters and does not name original L40 Ultra.", "query": "Dreame L40 Ultra dust box filter"},
+      {"type": "Mop pads", "fit": "Count 6 wash-free mop pads on the original L40/X40 kit. The AE/CE kit counts 3 wash-free mop pads and does not name original L40 Ultra.", "query": "Dreame L40 Ultra mop pads"},
+      {"type": "Brushes", "fit": "The original kit says main brush. The Gen 2 kit says rubber roller brush and limits compatibility to L40 Ultra Gen 2 and GoVac 405.", "query": "Dreame L40 Ultra main brush side brushes"}
     ],
     "sources": [
-      {"label": "Dreame official X40/L40 Ultra accessory kit", "url": "https://www.dreametech.com/products/x40-ultra-accessory-cleaning-kit"},
+      {"label": "Dreame X40 Ultra/L40 Ultra accessory kit, including GoVac 508", "url": "https://www.dreametech.com/products/x40-ultra-accessory-cleaning-kit"},
       {"label": "Dreame L40 Ultra product page", "url": "https://www.dreametech.com/products/l40ultra-robot-vacuum"},
-      {"label": "Separate Dreame L40 Ultra Gen 2 kit", "url": "https://www.dreametech.com/products/dreame-l40-ultra-gen-2-accessory-cleaning-kit-membership"}
+      {"label": "Dreame L40 Ultra Gen 2 kit, including GoVac 405", "url": "https://www.dreametech.com/products/dreame-l40-ultra-gen-2-accessory-cleaning-kit-membership"},
+      {"label": "Separate kit for L40s Ultra AE, L40s Ultra CE, and L10s Ultra Gen2", "url": "https://www.dreametech.com/products/x30-ultra-accessory-kit"}
     ]
   },
   {
@@ -183,16 +269,25 @@
     "slug": "dreame-l10s-ultra-gen-2-replacement-parts",
     "aliases": ["DreameBot L10s Ultra Gen2", "L10s Ultra Gen2"],
     "fit_family": "X30 / selected later L-series accessory family",
-    "warning": "The original L10s Ultra has a different official kit and filter listing. Match “Gen 2” on the machine label before ordering.",
+    "deck": "Gen 2 has to be on the label. Dreame’s kit title leads with L40s Ultra AE, L40s Ultra CE, and L10s Ultra Gen2, and the kit packs 3 wash-free mop pads.",
+    "warning": "Original L10s Ultra, with no Gen 2, has a different kit and 6 mop pads. The L10s/L20 dust-bag 3-pack does not name Gen 2.",
+    "notes": [
+      "The machine label has to include Gen 2. Dreame also writes that suffix as Gen2, without a space. Original L10s Ultra, with neither form, is a different kit page.",
+      "The official kit title leads with L40s Ultra AE, L40s Ultra CE, and L10s Ultra Gen2. The compatibility line names X30 Ultra, L40s Ultra AE, L40s Ultra CE, L10s Pro Ultra, L10s Ultra Gen2, D30 Ultra, D30 Ultra CE, GoVac 400, and GoVac 500.",
+      "Contents of that kit are 1 main brush, 2 side brushes, 2 dust-collection bags, 2 dust-box filters, and 3 wash-free mop pads.",
+      "The original L10s Ultra kit lists only L10s Ultra and packs 6 mop pads (3 pairs), 2 filters, and 2 dust bags. Its 3-pack dust-bag page says the bags are made for L10s Ultra and L20 Ultra, not for Gen 2. X40 Ultra and original L40 Ultra are on a third kit, with 6 wash-free mop pads and GoVac 508."
+    ],
     "parts": [
-      {"type": "Dust bags", "fit": "Dust bags included in Dreame’s official L10s Ultra Gen 2-compatible kit.", "query": "Dreame L10s Ultra Gen 2 dust bags"},
-      {"type": "Dust-box filters", "fit": "Dust-box filters included in the official Gen 2-compatible kit.", "query": "Dreame L10s Ultra Gen 2 dust box filters"},
-      {"type": "Mop pads", "fit": "Wash-free mop pads included in the official Gen 2-compatible kit.", "query": "Dreame L10s Ultra Gen 2 mop pads"},
-      {"type": "Brushes", "fit": "Main and side brushes included in the official Gen 2-compatible kit.", "query": "Dreame L10s Ultra Gen 2 main side brush kit"}
+      {"type": "Dust bags", "fit": "Gen 2 dust-collection bags are the 2 bags in the kit that names L10s Ultra Gen2. They are not the 3-pack made for original L10s Ultra and L20 Ultra.", "query": "Dreame L10s Ultra Gen 2 dust bags"},
+      {"type": "Dust-box filters", "fit": "Use the 2 dust-box filters in the Gen 2 kit. The filter title for original L10s Ultra names L10s Ultra, L10s Pro Gen2, L10s Plus, and D10s Plus Gen2, and it does not name L10s Ultra Gen 2.", "query": "Dreame L10s Ultra Gen 2 dust box filter"},
+      {"type": "Mop pads", "fit": "This kit includes 3 wash-free mop pads. The original L10s Ultra kit includes 6 mop pads (3 pairs) and does not name Gen 2.", "query": "Dreame L10s Ultra Gen 2 mop pads"},
+      {"type": "Brushes", "fit": "The Gen 2 kit counts 1 main brush and 2 side brushes for every model on its compatibility line, including L10s Ultra Gen2 and X30 Ultra.", "query": "Dreame L10s Ultra Gen 2 main brush side brushes"}
     ],
     "sources": [
-      {"label": "Dreame official L10s Ultra Gen 2-compatible kit", "url": "https://www.dreametech.com/products/x30-ultra-accessory-kit"},
-      {"label": "Original L10s Ultra kit for comparison", "url": "https://www.dreametech.com/products/accessory-kit-for-dreamebot-l10s-ultra"}
+      {"label": "Dreame kit naming L10s Ultra Gen2, L40s Ultra AE/CE, X30 Ultra, and related models", "url": "https://www.dreametech.com/products/x30-ultra-accessory-kit"},
+      {"label": "Original L10s Ultra kit, listed for L10s Ultra only", "url": "https://www.dreametech.com/products/accessory-kit-for-dreamebot-l10s-ultra"},
+      {"label": "Original L10s Ultra dust-box filter title, which does not name Gen 2", "url": "https://www.dreametech.com/products/filters-2-pack-for-l10s-ultra"},
+      {"label": "Dust-bag 3-pack made for original L10s Ultra and L20 Ultra", "url": "https://www.dreametech.com/products/dust-bags-3-for-dreamebot-l10s-ultra"}
     ]
   }
 ]
