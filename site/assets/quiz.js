@@ -390,7 +390,7 @@
         <p>${esc(note)}</p>
         ${habits}
         <div class="actions">
-          <a class="btn primary" href="${esc(ctaSku.url())}" target="_blank" rel="noopener noreferrer sponsored">Check price on Amazon</a>
+          <a class="btn primary" href="${esc(ctaSku.url())}" target="_blank" rel="noopener noreferrer sponsored" data-umami-event="amazon-outbound" data-umami-event-model="kitchen-drain-quiz" data-umami-event-part="${esc(ctaSku.id)}">Check price on Amazon</a>
           <a class="btn ghost" href="guides/prevent-grease-clog.html">Prevention habits</a>
           <button type="button" class="ghost" id="habits-only">Not now</button>
         </div>
@@ -423,7 +423,7 @@
           ${extra.why ? `<li><strong>Better if:</strong> ${esc(extra.why)}</li>` : ""}
         </ul>
         <p class="actions">
-          <a class="btn primary" href="${esc(sku.url())}" target="_blank" rel="noopener noreferrer sponsored">Check price on Amazon</a>
+          <a class="btn primary" href="${esc(sku.url())}" target="_blank" rel="noopener noreferrer sponsored" data-umami-event="amazon-outbound" data-umami-event-model="kitchen-drain-quiz" data-umami-event-part="${esc(sku.id)}">Check price on Amazon</a>
         </p>
         <p class="hint">Open Amazon only when the recommendation fits, then verify the current label and product details.</p>
       </div>`;

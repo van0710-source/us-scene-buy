@@ -98,9 +98,6 @@ def render_home(models: list[dict]) -> str:
   <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"WebSite","name":"US Scene Buy","url":"{BASE}","description":"Exact-model compatibility help for robot-vacuum replacement consumables."}}
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
@@ -178,9 +175,6 @@ def render_index(models: list[dict]) -> str:
   <link rel="canonical" href="{BASE}robots/" />
   <link rel="alternate" type="application/atom+xml" title="US Scene Buy updates" href="../feed.xml" />
   <script type="application/ld+json">{schema}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../assets/site.css" />
 </head>
@@ -236,15 +230,48 @@ def render_model(item: dict) -> str:
     bag_href = amazon_url(exact_query(item, bag["query"]))
     filter_href = amazon_url(exact_query(item, filt["query"]))
     kit_href = amazon_url(exact_query(item, f"{name} replacement accessory kit"))
+    page_url = f"{BASE}robots/{item['slug']}.html"
+    faq_items = [
+        {"q": f"Which dust bag fits the {name}?", "a": bag["fit"]},
+        {"q": f"Which filter fits the {name}?", "a": filt["fit"]},
+        {"q": f"What should I avoid mixing up with the {name}?", "a": item["warning"]},
+    ]
+    faq_html = "\n".join(
+        f"      <h3>{esc(entry['q'])}</h3>\n      <p>{esc(entry['a'])}</p>"
+        for entry in faq_items
+    )
     schema = json.dumps(
         {
             "@context": "https://schema.org",
-            "@type": "TechArticle",
-            "headline": f"{name} replacement-parts compatibility",
-            "description": item["deck"],
-            "dateModified": "2026-11-26",
-            "mainEntityOfPage": f"{BASE}robots/{item['slug']}.html",
-            "author": {"@type": "Organization", "name": "US Scene Buy"},
+            "@graph": [
+                {
+                    "@type": "TechArticle",
+                    "headline": f"{name} replacement-parts compatibility",
+                    "description": item["deck"],
+                    "dateModified": "2026-11-26",
+                    "mainEntityOfPage": page_url,
+                    "author": {"@type": "Organization", "name": "US Scene Buy"},
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": 1, "name": "Home", "item": BASE},
+                        {"@type": "ListItem", "position": 2, "name": "Robot parts", "item": f"{BASE}robots/"},
+                        {"@type": "ListItem", "position": 3, "name": f"{name} replacement parts", "item": page_url},
+                    ],
+                },
+                {
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": entry["q"],
+                            "acceptedAnswer": {"@type": "Answer", "text": entry["a"]},
+                        }
+                        for entry in faq_items
+                    ],
+                },
+            ],
         },
         ensure_ascii=False,
     )
@@ -258,15 +285,17 @@ def render_model(item: dict) -> str:
   <link rel="canonical" href="{BASE}robots/{esc(item["slug"])}.html" />
   <link rel="alternate" type="application/atom+xml" title="US Scene Buy updates" href="../feed.xml" />
   <script type="application/ld+json">{schema}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="../assets/site.css" />
 </head>
 <body>
 {header("../", "models")}
   <main class="wrap article">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Robot parts</a>
+      <span aria-current="page">{esc(name)}</span>
+    </nav>
     <p class="eyebrow">{esc(item["brand"])} · {esc(item["fit_family"])}</p>
     <h1>Compatible replacement parts for {esc(name)}</h1>
     <p class="deck">{esc(item["deck"])}</p>
@@ -293,6 +322,11 @@ def render_model(item: dict) -> str:
       </p>
       <p class="hint"><a href="{esc(kit_href)}" target="_blank" rel="noopener noreferrer sponsored" data-umami-event="amazon-outbound" data-umami-event-model="{esc(item["slug"])}" data-umami-event-part="kit">Search current {esc(name)} kits on Amazon</a></p>
     </section>
+
+    <h2>Fit questions</h2>
+    <div class="faq">
+{faq_html}
+    </div>
 
     <h2>Sources used for this fit check</h2>
     <ul>

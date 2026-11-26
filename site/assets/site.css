@@ -15,8 +15,8 @@
   --danger-bg: #fceeee;
   --radius: 14px;
   --shadow: 0 18px 50px rgba(20, 32, 28, 0.08);
-  --font: Manrope, system-ui, sans-serif;
-  --display: Literata, Georgia, serif;
+  --font: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --display: Georgia, "Iowan Old Style", Palatino, "Palatino Linotype", serif;
 }
 
 * { box-sizing: border-box; }
@@ -279,6 +279,24 @@ a:hover { color: var(--deep); }
   filter: grayscale(0.8);
   opacity: 0.55;
   transform: none;
+}
+
+.crumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.45rem;
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.crumb a { font-weight: 600; text-decoration: none; }
+.crumb span[aria-current="page"] { color: var(--ink); }
+
+.faq h3 {
+  margin: 1rem 0 0.35rem;
+  font-size: 1.05rem;
+  color: var(--deep);
 }
 
 .article {
